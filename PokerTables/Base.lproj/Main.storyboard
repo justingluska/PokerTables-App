@@ -33,15 +33,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="IUg-Le-CAg">
-                                <rect key="frame" x="37" y="308" width="328" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="minimumTrackTintColor" red="0.25980823774947193" green="0.55847477791878175" blue="0.22860820617808564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" red="0.27068858696542386" green="0.41334840068932821" blue="0.50146732230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="VhD-e4-dLy"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Randomizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0k-iG-FJN">
                                 <rect key="frame" x="89" y="143" width="274" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -157,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cmn-w6-SWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2101.449275362319" y="728.57142857142856"/>
+            <point key="canvasLocation" x="1604" y="787"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jnc-Wt-4yS">
@@ -238,7 +229,7 @@
                                 </state>
                                 <connections>
                                     <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Nr-HL-Res"/>
-                                    <segue destination="pgd-TF-Pqy" kind="showDetail" id="f5O-xY-U0O"/>
+                                    <segue destination="pgd-TF-Pqy" kind="show" id="1AP-r3-VSD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -254,10 +245,10 @@
             </objects>
             <point key="canvasLocation" x="934.78260869565224" y="20.758928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Two Table-->
         <scene sceneID="o1A-XL-k1I">
             <objects>
-                <viewController id="pgd-TF-Pqy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TwoTable" id="pgd-TF-Pqy" customClass="TwoTable" customModule="PokerTables" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8N-VC-A3n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,8 +256,18 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="vg1-lT-Djk">
                                 <rect key="frame" x="-126.33333333333331" y="-218.66666666666663" width="666.66666666666652" height="1333.333333333333"/>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="IUg-Le-CAg">
+                                <rect key="frame" x="29" y="130" width="328" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.25980823774947193" green="0.55847477791878175" blue="0.22860820617808564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.27068858696542386" green="0.41334840068932821" blue="0.50146732230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="yF5-Xw-SxH" eventType="valueChanged" id="TnX-LB-hj2"/>
+                                    <action selector="twoSliderChanged:" destination="pgd-TF-Pqy" eventType="valueChanged" id="CDa-ex-RH1"/>
+                                </connections>
+                            </slider>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Wgi-J1-91X">
-                                <rect key="frame" x="0.0" y="0.0" width="178.66666666666666" height="372"/>
+                                <rect key="frame" x="103.99999999999999" y="235" width="178.66666666666666" height="372"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwQ-bB-2Zc">
@@ -421,8 +422,28 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Oq2-To-gOI"/>
                     </view>
+                    <connections>
+                        <outlet property="p10Name" destination="DtY-mN-vwg" id="o3g-yX-KCO"/>
+                        <outlet property="p11Name" destination="29d-Gq-fcN" id="Lca-I1-UTz"/>
+                        <outlet property="p12Name" destination="jNy-IR-3jQ" id="sjb-5W-Xau"/>
+                        <outlet property="p13Name" destination="TGl-u8-WfQ" id="qXb-TZ-CO3"/>
+                        <outlet property="p14Name" destination="Fc0-wp-yMh" id="NU7-B3-IW6"/>
+                        <outlet property="p15Name" destination="Gm2-8n-UMj" id="aON-JN-Lu4"/>
+                        <outlet property="p16Name" destination="OSk-ti-YMw" id="CQg-4e-Ns9"/>
+                        <outlet property="p1Name" destination="a7i-c6-3qN" id="1jb-zK-BY2"/>
+                        <outlet property="p2Name" destination="bmK-Oe-mYw" id="yU0-u8-rG0"/>
+                        <outlet property="p3Name" destination="Hj7-k0-uJX" id="Lh1-My-pLE"/>
+                        <outlet property="p4Name" destination="9Fx-ls-AZm" id="WL6-FJ-2bG"/>
+                        <outlet property="p5Name" destination="iSD-Dr-lSK" id="93M-qM-HLy"/>
+                        <outlet property="p6Name" destination="NTB-Nq-cWt" id="yOj-Hw-u2e"/>
+                        <outlet property="p7Name" destination="xjG-cp-QY4" id="WN3-h1-aMy"/>
+                        <outlet property="p8Name" destination="Tpx-GO-uOy" id="hhc-5W-WhG"/>
+                        <outlet property="p9Name" destination="qfk-D7-N6Q" id="qzB-ei-nXJ"/>
+                        <outlet property="twoPlayerLabel" destination="RwQ-bB-2Zc" id="6nb-W7-ddA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GTf-mZ-AgI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yF5-Xw-SxH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2105.7971014492755" y="-593.30357142857144"/>
         </scene>
