@@ -150,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="2106" y="783"/>
         </scene>
-        <!--View Controller-->
+        <!--Calculate-->
         <scene sceneID="jnc-Wt-4yS">
             <objects>
-                <viewController id="HP8-Co-eKJ" customClass="ViewController" customModule="PokerTables" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Calculate" id="HP8-Co-eKJ" customClass="Calculate" customModule="PokerTables" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S6M-Cx-G83">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,7 @@
                         <viewLayoutGuide key="safeArea" id="dVO-9p-FhQ"/>
                     </view>
                     <connections>
-                        <outlet property="output" destination="McQ-HT-koo" id="shM-04-Lrw"/>
+                        <outlet property="outputLabel" destination="McQ-HT-koo" id="gcq-YM-QOx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRu-LY-H9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -429,6 +429,14 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cx6-YJ-vPC">
+                                <rect key="frame" x="303" y="531" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="HP8-Co-eKJ" kind="show" id="3yp-W5-m8A"/>
+                                </connections>
+                            </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="IUg-Le-CAg">
                                 <rect key="frame" x="23" y="166" width="328" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

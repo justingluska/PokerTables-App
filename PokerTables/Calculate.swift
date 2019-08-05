@@ -14,7 +14,6 @@ class Calculate: UIViewController {
         super.viewDidLoad()
     }
     
-
+    @IBOutlet weak var outputLabel: UITextView!
     
-
 }

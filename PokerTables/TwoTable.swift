@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class TwoTable: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
@@ -75,8 +76,8 @@ class TwoTable: UIViewController, UITextFieldDelegate {
     }
     
     func emptyTextAlert(){
-        let alert = UIAlertController(title:"Error", message:"Please fill in all text fields before generating equal tables", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title:"I'm Sorry", style: .default, handler: nil))
+        let alert = UIAlertController(title:"Error", message:"Fill in all text fields before generating equal tables", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title:"Understood", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
     
@@ -232,6 +233,7 @@ class TwoTable: UIViewController, UITextFieldDelegate {
         }
 
     }
+
     
     struct twoPlayerNames {
         static var player1 = ""
