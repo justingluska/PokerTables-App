@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+import GoogleMobileAds
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override point for customization after application launch
+        // Initialize Firebase
+        FirebaseApp.configure()
+
+        // Initialize Admob
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-3940256099942544/2934735716")
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
+
+        
         return true
     }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37DD1B29B1B00F484AED760B /* Pods_PokerTables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05173970A013D4D4B5686CA8 /* Pods_PokerTables.framework */; };
+		D006A3A222F7BC2E00D6E77E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D006A3A122F7BC2E00D6E77E /* GoogleService-Info.plist */; };
 		D01E743222F727270041ED94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E743122F727270041ED94 /* AppDelegate.swift */; };
 		D01E743422F727270041ED94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E743322F727270041ED94 /* ViewController.swift */; };
 		D01E743722F727270041ED94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01E743522F727270041ED94 /* Main.storyboard */; };
@@ -16,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05173970A013D4D4B5686CA8 /* Pods_PokerTables.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerTables.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90CEFCD74989E5126613EDB3 /* Pods-PokerTables.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTables.debug.xcconfig"; path = "Target Support Files/Pods-PokerTables/Pods-PokerTables.debug.xcconfig"; sourceTree = "<group>"; };
+		D006A3A122F7BC2E00D6E77E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D01E742E22F727270041ED94 /* PokerTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01E743122F727270041ED94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D01E743322F727270041ED94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,8 @@
 		D01E743B22F727280041ED94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D01E743E22F727280041ED94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D01E744022F727280041ED94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D01E744722F7414B0041ED94 /* MYRIADAS.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = MYRIADAS.TTF; path = "../../../../../Downloads/Myriad-Apple-Bold/MYRIADAS.TTF"; sourceTree = "<group>"; };
+		D9F791EF521544153DA281AE /* Pods-PokerTables.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTables.release.xcconfig"; path = "Target Support Files/Pods-PokerTables/Pods-PokerTables.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +38,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DD1B29B1B00F484AED760B /* Pods_PokerTables.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CA3B74E9CEBC5F66F052C16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90CEFCD74989E5126613EDB3 /* Pods-PokerTables.debug.xcconfig */,
+				D9F791EF521544153DA281AE /* Pods-PokerTables.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		88101BC18B78000339185A88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05173970A013D4D4B5686CA8 /* Pods_PokerTables.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D01E742522F727270041ED94 = {
 			isa = PBXGroup;
 			children = (
 				D01E743022F727270041ED94 /* PokerTables */,
 				D01E742F22F727270041ED94 /* Products */,
+				6CA3B74E9CEBC5F66F052C16 /* Pods */,
+				88101BC18B78000339185A88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,7 @@
 		D01E743022F727270041ED94 /* PokerTables */ = {
 			isa = PBXGroup;
 			children = (
+				D01E744822F792EB0041ED94 /* IMAGES */,
 				D01E743122F727270041ED94 /* AppDelegate.swift */,
 				D01E743322F727270041ED94 /* ViewController.swift */,
 				D01E743522F727270041ED94 /* Main.storyboard */,
@@ -63,8 +92,25 @@
 				D01E743D22F727280041ED94 /* LaunchScreen.storyboard */,
 				D01E744022F727280041ED94 /* Info.plist */,
 				D01E743822F727270041ED94 /* PokerTables.xcdatamodeld */,
+				D006A3A122F7BC2E00D6E77E /* GoogleService-Info.plist */,
+				D01E744622F7412F0041ED94 /* FONTS */,
 			);
 			path = PokerTables;
+			sourceTree = "<group>";
+		};
+		D01E744622F7412F0041ED94 /* FONTS */ = {
+			isa = PBXGroup;
+			children = (
+				D01E744722F7414B0041ED94 /* MYRIADAS.TTF */,
+			);
+			path = FONTS;
+			sourceTree = "<group>";
+		};
+		D01E744822F792EB0041ED94 /* IMAGES */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IMAGES;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D01E744322F727280041ED94 /* Build configuration list for PBXNativeTarget "PokerTables" */;
 			buildPhases = (
+				77DFE7E2C13B24BF2EA87343 /* [CP] Check Pods Manifest.lock */,
 				D01E742A22F727270041ED94 /* Sources */,
 				D01E742B22F727270041ED94 /* Frameworks */,
 				D01E742C22F727270041ED94 /* Resources */,
+				14DE839A788D829F8676697C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +174,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				D01E743F22F727280041ED94 /* LaunchScreen.storyboard in Resources */,
+				D006A3A222F7BC2E00D6E77E /* GoogleService-Info.plist in Resources */,
 				D01E743C22F727280041ED94 /* Assets.xcassets in Resources */,
 				D01E743722F727270041ED94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14DE839A788D829F8676697C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokerTables/Pods-PokerTables-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PokerTables/Pods-PokerTables-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PokerTables/Pods-PokerTables-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77DFE7E2C13B24BF2EA87343 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PokerTables-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D01E742A22F727270041ED94 /* Sources */ = {
@@ -284,6 +375,7 @@
 		};
 		D01E744422F727280041ED94 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90CEFCD74989E5126613EDB3 /* Pods-PokerTables.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +394,7 @@
 		};
 		D01E744522F727280041ED94 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F791EF521544153DA281AE /* Pods-PokerTables.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
