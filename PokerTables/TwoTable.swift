@@ -7,10 +7,77 @@
 
 import UIKit
 
-class TwoTable: UIViewController {
+class TwoTable: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
+        self.p1Name.delegate = self
+        self.p2Name.delegate = self
+        self.p3Name.delegate = self
+        self.p4Name.delegate = self
+        self.p5Name.delegate = self
+        self.p6Name.delegate = self
+        self.p7Name.delegate = self
+        self.p8Name.delegate = self
+        self.p9Name.delegate = self
+        self.p10Name.delegate = self
+        self.p11Name.delegate = self
+        self.p12Name.delegate = self
+        self.p13Name.delegate = self
+        self.p14Name.delegate = self
+        self.p15Name.delegate = self
+        self.p16Name.delegate = self
         super.viewDidLoad()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func fourEmpty(){
+        if((p1Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p2Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p3Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p4Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    
+    func sixEmpty(){
+        if((p1Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p2Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p3Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p4Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p5Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p6Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    
+    func emptyTextAlert(){
+        let alert = UIAlertController(title:"Error", message:"Please fill in all text fields before generating equal tables", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title:"I'm Sorry", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
     
     var twoPlayerAmount:Int = 4
@@ -187,6 +254,7 @@ class TwoTable: UIViewController {
     
     @IBAction func calcTwo(_ sender: UIButton) {
         if(twoPlayerAmount == 4){
+            fourEmpty()
             twoPlayerNames.player1 = p1Name.text!
             twoPlayerNames.player2 = p2Name.text!
             twoPlayerNames.player3 = p3Name.text!
@@ -197,7 +265,18 @@ class TwoTable: UIViewController {
             self.present(alert, animated: true)
         }
         else if(twoPlayerAmount == 6){
-            print("damn")
+            sixEmpty()
+            twoPlayerNames.player1 = p1Name.text!
+            twoPlayerNames.player2 = p2Name.text!
+            twoPlayerNames.player3 = p3Name.text!
+            twoPlayerNames.player4 = p4Name.text!
+            twoPlayerNames.player5 = p5Name.text!
+            twoPlayerNames.player6 = p6Name.text!
+            let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4, twoPlayerNames.player5, twoPlayerNames.player6].shuffled()
+            let alert = UIAlertController(title:"2 TABLE POKER FOR 4",
+                                          message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1]), \(twoTab[2])     \n\nTABLE 2: \(twoTab[3]), \(twoTab[4]), \(twoTab[5])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
+            self.present(alert, animated: true)
             
             
         }
