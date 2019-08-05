@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>509342908739-4thlr8qp7hlm95c4omlu0dft3r5d6but.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.509342908739-4thlr8qp7hlm95c4omlu0dft3r5d6but</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBQL1EFYBCLleuqBNlAbW5KTvZL3q7bzf0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>509342908739</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.justingluska.PokerTables</string>
+	<key>PROJECT_ID</key>
+	<string>pokertables</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pokertables.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:509342908739:ios:c687b6761de706e1</string>
+	<key>DATABASE_URL</key>
+	<string>https://pokertables.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-9134328104554845~9852263151</string>
+</dict>
+</plist>
