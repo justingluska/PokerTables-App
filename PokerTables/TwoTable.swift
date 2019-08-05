@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class TwoTable: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
