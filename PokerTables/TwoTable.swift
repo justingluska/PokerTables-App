@@ -1,9 +1,8 @@
 //
 //  TwoTable.swift
-//  PokerTables
+//  
 //
 //  Created by Justin Gluska on 8/5/19.
-//  Copyright © 2019 Justin Gluska. All rights reserved.
 //
 
 import UIKit
@@ -12,18 +11,10 @@ class TwoTable: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-    // MARK: - Table view data source
+    
     var twoPlayerAmount:Int = 4
-    
-    
+   
     @IBOutlet weak var twoPlayerLabel: UILabel!
     
     @IBOutlet weak var p1Name: UITextField!
@@ -42,8 +33,6 @@ class TwoTable: UIViewController {
     @IBOutlet weak var p14Name: UITextField!
     @IBOutlet weak var p15Name: UITextField!
     @IBOutlet weak var p16Name: UITextField!
-    
-    
     
     @IBAction func twoSliderChanged(_ sender: UISlider) {
         twoPlayerAmount = Int(sender.value) * 2
@@ -174,88 +163,49 @@ class TwoTable: UIViewController {
             p15Name.isHidden = false
             p16Name.isHidden = false
         }
-    }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
-
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    
+    struct twoPlayerNames {
+        static var player1 = ""
+        static var player2 = ""
+        static var player3 = ""
+        static var player4 = ""
+        static var player5 = ""
+        static var player6 = ""
+        static var player7 = ""
+        static var player8 = ""
+        static var player9 = ""
+        static var player10 = ""
+        static var player11 = ""
+        static var player12 = ""
+        static var player13 = ""
+        static var player14 = ""
+        static var player15 = ""
+        static var player16 = ""
     }
-    */
+    
+    @IBAction func calcTwo(_ sender: UIButton) {
+        if(twoPlayerAmount == 4){
+            twoPlayerNames.player1 = p1Name.text!
+            twoPlayerNames.player2 = p2Name.text!
+            twoPlayerNames.player3 = p3Name.text!
+            twoPlayerNames.player4 = p4Name.text!
+            let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4].shuffled()
+            let alert = UIAlertController(title:"2 TABLE POKER FOR 4", message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1])\n\nTABLE 2: \(twoTab[2]), \(twoTab[3])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else if(twoPlayerAmount == 6){
+            print("damn")
+            
+            
+        }
+        
+        
+        
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
-
+    
+    
+}

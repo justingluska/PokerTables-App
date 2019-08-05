@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/justin/Documents/XCode/PokerTables/PokerTables/TwoTable.swift">
+   </FileRef>
+   <FileRef
       location = "group:PokerTables.xcodeproj">
    </FileRef>
    <FileRef
