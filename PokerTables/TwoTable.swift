@@ -38,44 +38,235 @@ class TwoTable: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    func fourEmpty(){
-        if((p1Name.text ?? "").isEmpty){
-            emptyTextAlert()
+    func checkEmpty(){
+        if(twoPlayerAmount == 4){
+            if((p1Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p2Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p3Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p4Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
         }
-        if((p2Name.text ?? "").isEmpty){
-            emptyTextAlert()
+        else if(twoPlayerAmount == 6){
+            if((p1Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p2Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p3Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p4Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p5Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p6Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
         }
-        if((p3Name.text ?? "").isEmpty){
-            emptyTextAlert()
+        else if(twoPlayerAmount == 8){
+            if((p1Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p2Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p3Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p4Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p5Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p6Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p7Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p8Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
         }
-        if((p4Name.text ?? "").isEmpty){
-            emptyTextAlert()
+        else if(twoPlayerAmount == 10){
+            if((p1Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p2Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p3Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p4Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p5Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p6Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p7Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p8Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p9Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p10Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
         }
-    }
-    
-    func sixEmpty(){
-        if((p1Name.text ?? "").isEmpty){
-            emptyTextAlert()
+        else if(twoPlayerAmount == 12){
+            if((p1Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p2Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p3Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p4Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p5Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p6Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p7Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p8Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p9Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p10Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p11Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p12Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
         }
-        if((p2Name.text ?? "").isEmpty){
-            emptyTextAlert()
+        else if(twoPlayerAmount == 14){
+            if((p1Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p2Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p3Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p4Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p5Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p6Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p7Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p8Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p9Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p10Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p11Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p12Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p13Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p14Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
         }
-        if((p3Name.text ?? "").isEmpty){
-            emptyTextAlert()
-        }
-        if((p4Name.text ?? "").isEmpty){
-            emptyTextAlert()
-        }
-        if((p5Name.text ?? "").isEmpty){
-            emptyTextAlert()
-        }
-        if((p6Name.text ?? "").isEmpty){
-            emptyTextAlert()
+        else if(twoPlayerAmount == 16){
+            if((p1Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p2Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p3Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p4Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p5Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p6Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p7Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p8Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p9Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p10Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p11Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p12Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p13Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p14Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p15Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
+            if((p16Name.text ?? "").isEmpty){
+                emptyTextAlert()
+            }
         }
     }
     
     func emptyTextAlert(){
-        let alert = UIAlertController(title:"Error", message:"Fill in all text fields before generating equal tables", preferredStyle: .alert)
+        let alert = UIAlertController(title:"Error", message:"It is required that all input fields must be completely filled before generating tables.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title:"Understood", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
@@ -253,35 +444,52 @@ class TwoTable: UIViewController, UITextFieldDelegate {
         static var player16 = ""
     }
     
+    func setNames(){
+        twoPlayerNames.player1 = p1Name.text!
+        twoPlayerNames.player2 = p2Name.text!
+        twoPlayerNames.player3 = p3Name.text!
+        twoPlayerNames.player4 = p4Name.text!
+        twoPlayerNames.player5 = p5Name.text!
+        twoPlayerNames.player6 = p6Name.text!
+        twoPlayerNames.player7 = p7Name.text!
+        twoPlayerNames.player8 = p8Name.text!
+        twoPlayerNames.player9 = p9Name.text!
+        twoPlayerNames.player10 = p10Name.text!
+        twoPlayerNames.player11 = p11Name.text!
+        twoPlayerNames.player12 = p12Name.text!
+        twoPlayerNames.player13 = p13Name.text!
+        twoPlayerNames.player14 = p14Name.text!
+        twoPlayerNames.player15 = p15Name.text!
+        twoPlayerNames.player16 = p16Name.text!
+    }
+    
     @IBAction func calcTwo(_ sender: UIButton) {
         if(twoPlayerAmount == 4){
-            fourEmpty()
-            twoPlayerNames.player1 = p1Name.text!
-            twoPlayerNames.player2 = p2Name.text!
-            twoPlayerNames.player3 = p3Name.text!
-            twoPlayerNames.player4 = p4Name.text!
+            checkEmpty()
+            setNames()
             let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4].shuffled()
             let alert = UIAlertController(title:"2 TABLE POKER FOR 4", message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1])\n\nTABLE 2: \(twoTab[2]), \(twoTab[3])", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
             self.present(alert, animated: true)
         }
         else if(twoPlayerAmount == 6){
-            sixEmpty()
-            twoPlayerNames.player1 = p1Name.text!
-            twoPlayerNames.player2 = p2Name.text!
-            twoPlayerNames.player3 = p3Name.text!
-            twoPlayerNames.player4 = p4Name.text!
-            twoPlayerNames.player5 = p5Name.text!
-            twoPlayerNames.player6 = p6Name.text!
+            checkEmpty()
+            setNames()
             let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4, twoPlayerNames.player5, twoPlayerNames.player6].shuffled()
             let alert = UIAlertController(title:"2 TABLE POKER FOR 4",
                                           message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1]), \(twoTab[2])     \n\nTABLE 2: \(twoTab[3]), \(twoTab[4]), \(twoTab[5])", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
             self.present(alert, animated: true)
-            
-            
         }
-        
+        else if(twoPlayerAmount == 8){
+            checkEmpty()
+            setNames()
+            let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4, twoPlayerNames.player5, twoPlayerNames.player6, twoPlayerNames.player7, twoPlayerNames.player8].shuffled()
+            let alert = UIAlertController(title:"2 TABLE POKER FOR 4",
+                                          message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1]), \(twoTab[2]), \(twoTab[3])     \n\nTABLE 2: \(twoTab[4]), \(twoTab[5]), \(twoTab[6])         ", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
         
         
 
