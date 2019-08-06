@@ -37,6 +37,23 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
         self.p23Name.delegate = self
         self.p24Name.delegate = self
         p7Name.isHidden = true
+        p8Name.isHidden = true
+        p9Name.isHidden = true
+        p10Name.isHidden = true
+        p11Name.isHidden = true
+        p12Name.isHidden = true
+        p13Name.isHidden = true
+        p14Name.isHidden = true
+        p15Name.isHidden = true
+        p16Name.isHidden = true
+        p17Name.isHidden = true
+        p18Name.isHidden = true
+        p19Name.isHidden = true
+        p20Name.isHidden = true
+        p21Name.isHidden = true
+        p22Name.isHidden = true
+        p23Name.isHidden = true
+        p24Name.isHidden = true
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
@@ -412,13 +429,6 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var p23Name: UITextField!
     @IBOutlet weak var p24Name: UITextField!
     @IBOutlet weak var p25Name: UITextField!
-    
-  
-    
-    
-
-    
-    
     
     @IBAction func threeSlider(_ sender: UISlider) {
         threePlayerAmount = Int(sender.value) * 3
