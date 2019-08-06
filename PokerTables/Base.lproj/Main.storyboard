@@ -96,30 +96,6 @@
             <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="HSH-fF-lN4">
-            <objects>
-                <viewController id="rKP-cR-NF9" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xxd-eM-zcR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red" translatesAutoresizingMaskIntoConstraints="NO" id="IzM-Cu-NS0">
-                                <rect key="frame" x="-312.5" y="-666.5" width="1000" height="2000"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="IzM-Cu-NS0" firstAttribute="centerX" secondItem="Xxd-eM-zcR" secondAttribute="centerX" id="Y2P-Bb-y47"/>
-                            <constraint firstItem="IzM-Cu-NS0" firstAttribute="centerY" secondItem="Xxd-eM-zcR" secondAttribute="centerY" id="iDt-F0-DnY"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="QPx-d3-GG0"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eqL-8g-csK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2091.304347826087" y="60.9375"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="rPR-VL-AID">
             <objects>
                 <viewController id="Tmh-xv-g6k" sceneMemberID="viewController">
@@ -200,8 +176,7 @@
                                     <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 </state>
                                 <connections>
-                                    <action selector="test:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ith-qX-Qm1"/>
-                                    <segue destination="rKP-cR-NF9" kind="showDetail" id="2Hb-LQ-jdO"/>
+                                    <segue destination="3Op-s4-CNS" kind="show" id="KBd-bQ-U3K"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIl-B8-89E">
@@ -502,6 +477,306 @@
             </objects>
             <point key="canvasLocation" x="2104.8000000000002" y="-642.72863568215894"/>
         </scene>
+        <!--Three Table-->
+        <scene sceneID="fWR-b2-zUa">
+            <objects>
+                <viewController storyboardIdentifier="ThreeTable" id="3Op-s4-CNS" customClass="ThreeTable" customModule="PokerTables" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qVQ-CS-S2a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red" translatesAutoresizingMaskIntoConstraints="NO" id="UV7-In-Orx">
+                                <rect key="frame" x="-312.5" y="-666.5" width="1000" height="2000"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fp-DG-Lht">
+                                <rect key="frame" x="20" y="603" width="335" height="44"/>
+                                <color key="backgroundColor" red="0.53108698129999998" green="0.1864177883" blue="0.098790563639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="GENERATE">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateButton:" destination="3Op-s4-CNS" eventType="touchUpInside" id="gGr-6o-uOl"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="2" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="JfY-Be-IWM">
+                                <rect key="frame" x="28" y="71.5" width="319" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.50146732230000002" green="0.12211872310000001" blue="0.070339911419999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.27068858699999998" green="0.41334840070000001" blue="0.50146732230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="yF5-Xw-SxH" eventType="valueChanged" id="Kao-i5-XtR"/>
+                                    <action selector="sliderChanged:" destination="Yi8-DY-ars" eventType="valueChanged" id="hEF-JP-e14"/>
+                                    <action selector="threeSlider:" destination="3Op-s4-CNS" eventType="valueChanged" id="5vm-EK-xyE"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THREE TABLES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUK-t4-ewm">
+                                <rect key="frame" x="115" y="35" width="145" height="26.5"/>
+                                <fontDescription key="fontDescription" name="MyriadApple-Semibold" family="Myriad Apple" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kya-dj-TD0">
+                                <rect key="frame" x="20" y="553" width="75" height="30"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.53108698129999998" green="0.1864177883" blue="0.098790563639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="t5F-ud-cZT" kind="show" id="i2w-vL-wjt"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="WBn-Yz-1BA">
+                                <rect key="frame" x="20" y="111.5" width="335" height="208"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qw-dD-8B7">
+                                        <rect key="frame" x="108.5" y="0.0" width="118" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Sbf-6H-z27">
+                                        <rect key="frame" x="31" y="50" width="273.5" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P1 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OHc-Gh-Pbs" userLabel="p1">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P2 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="IrA-ax-w9A" userLabel="p2">
+                                                <rect key="frame" x="96" y="0.0" width="79.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P3 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZsX-sg-zdQ" userLabel="p3">
+                                                <rect key="frame" x="193.5" y="0.0" width="80" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="96T-kz-wDb">
+                                        <rect key="frame" x="29.5" y="94" width="276.5" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P4 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0XW-DO-7Wx" userLabel="p4">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P5 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="abj-3L-W8b" userLabel="p5">
+                                                <rect key="frame" x="98" y="0.0" width="80" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P6 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NJp-Rg-rQP" userLabel="p6">
+                                                <rect key="frame" x="196" y="0.0" width="80.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="YLY-W6-cXH">
+                                        <rect key="frame" x="167.5" y="138" width="0.0" height="0.0"/>
+                                        <subviews>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P7 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5dT-aw-Ulj" userLabel="p7">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P8 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="m9Y-vJ-89G" userLabel="p8">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P9 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rqz-sf-Dgw" userLabel="p9">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Zdz-2Q-6Et">
+                                        <rect key="frame" x="167.5" y="152" width="0.0" height="0.0"/>
+                                        <subviews>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P10 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zpX-o7-mQe" userLabel="p10">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P11 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="anI-fV-ocE" userLabel="p11">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P12 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="qY2-D8-AIF" userLabel="p12">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="3hX-qr-qkW">
+                                        <rect key="frame" x="167.5" y="166" width="0.0" height="0.0"/>
+                                        <subviews>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P13 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sOr-Iw-t9P" userLabel="p13">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P14 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mJK-bR-0Uf" userLabel="p14">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P15 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ja5-od-Co5" userLabel="p15">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="ylo-v4-x1M">
+                                        <rect key="frame" x="167.5" y="180" width="0.0" height="0.0"/>
+                                        <subviews>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P16 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fGE-hc-fwS" userLabel="p16">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P17 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iX4-cM-hUI" userLabel="p17">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P18 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jrZ-Cv-P25" userLabel="p18">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="RiL-5G-fJ8">
+                                        <rect key="frame" x="167.5" y="194" width="0.0" height="0.0"/>
+                                        <subviews>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P19 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3YW-DZ-mlc" userLabel="p19">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P20 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2Ho-XO-Xx4" userLabel="p20">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P21 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="74x-hx-exU" userLabel="p21">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="xKM-MJ-Y5J">
+                                        <rect key="frame" x="167.5" y="208" width="0.0" height="0.0"/>
+                                        <subviews>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P22 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bIF-Yc-bti" userLabel="p22">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P23 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cPJ-oO-DdB" userLabel="p23">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P24 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="EWB-A0-RKT" userLabel="p24">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="JfY-Be-IWM" secondAttribute="trailing" constant="30" id="1A4-fH-ycn"/>
+                            <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="7fp-DG-Lht" secondAttribute="trailing" constant="20" id="29r-4H-m8y"/>
+                            <constraint firstItem="suK-7m-rqB" firstAttribute="bottom" secondItem="7fp-DG-Lht" secondAttribute="bottom" constant="20" id="7kA-Ar-YaN"/>
+                            <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="WBn-Yz-1BA" secondAttribute="trailing" constant="20" id="8bk-8Z-x5c"/>
+                            <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="CUK-t4-ewm" secondAttribute="trailing" constant="115" id="DYk-aZ-Cqm"/>
+                            <constraint firstItem="JfY-Be-IWM" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="30" id="IDj-Fs-nnV"/>
+                            <constraint firstItem="Kya-dj-TD0" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="20" id="OOp-jR-838"/>
+                            <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="Kya-dj-TD0" secondAttribute="trailing" constant="280" id="Q7i-E3-MzX"/>
+                            <constraint firstItem="WBn-Yz-1BA" firstAttribute="top" secondItem="JfY-Be-IWM" secondAttribute="bottom" constant="10" id="Rwm-pd-9tj"/>
+                            <constraint firstItem="CUK-t4-ewm" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="115" id="Wrg-vm-dG6"/>
+                            <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="7fp-DG-Lht" secondAttribute="trailing" constant="20" id="Z0a-gi-hFb"/>
+                            <constraint firstItem="WBn-Yz-1BA" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="20" id="ceP-VF-v7f"/>
+                            <constraint firstItem="7fp-DG-Lht" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="20" id="dMm-it-3qc"/>
+                            <constraint firstItem="JfY-Be-IWM" firstAttribute="top" secondItem="CUK-t4-ewm" secondAttribute="bottom" constant="10" id="r2s-VK-J8E"/>
+                            <constraint firstItem="UV7-In-Orx" firstAttribute="centerY" secondItem="qVQ-CS-S2a" secondAttribute="centerY" id="sQu-na-1OY"/>
+                            <constraint firstItem="UV7-In-Orx" firstAttribute="centerX" secondItem="qVQ-CS-S2a" secondAttribute="centerX" id="tzy-RI-9PE"/>
+                            <constraint firstItem="7fp-DG-Lht" firstAttribute="top" secondItem="Kya-dj-TD0" secondAttribute="bottom" constant="20" id="vtT-Gb-yey"/>
+                            <constraint firstItem="CUK-t4-ewm" firstAttribute="top" secondItem="suK-7m-rqB" secondAttribute="top" constant="15" id="wvG-ip-JkJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="suK-7m-rqB"/>
+                    </view>
+                    <connections>
+                        <outlet property="p10Name" destination="zpX-o7-mQe" id="Kww-Wh-3kp"/>
+                        <outlet property="p11Name" destination="anI-fV-ocE" id="7dR-X0-BOC"/>
+                        <outlet property="p12Name" destination="qY2-D8-AIF" id="uQu-7L-XWO"/>
+                        <outlet property="p13Name" destination="sOr-Iw-t9P" id="yzx-TB-awY"/>
+                        <outlet property="p14Name" destination="mJK-bR-0Uf" id="YKh-cs-Mh1"/>
+                        <outlet property="p15Name" destination="ja5-od-Co5" id="RNH-up-rRP"/>
+                        <outlet property="p16Name" destination="fGE-hc-fwS" id="jT5-Uc-1f7"/>
+                        <outlet property="p17Name" destination="iX4-cM-hUI" id="dsM-bE-jul"/>
+                        <outlet property="p18Name" destination="jrZ-Cv-P25" id="YeI-0i-fZx"/>
+                        <outlet property="p19Name" destination="3YW-DZ-mlc" id="Lb2-Xv-rw5"/>
+                        <outlet property="p1Name" destination="OHc-Gh-Pbs" id="ZEU-Fp-Q0y"/>
+                        <outlet property="p20Name" destination="2Ho-XO-Xx4" id="WEY-Tc-xnu"/>
+                        <outlet property="p21Name" destination="74x-hx-exU" id="6Ss-eZ-4yl"/>
+                        <outlet property="p22Name" destination="bIF-Yc-bti" id="Ja7-rp-FNT"/>
+                        <outlet property="p23Name" destination="cPJ-oO-DdB" id="zTw-jP-L0i"/>
+                        <outlet property="p24Name" destination="EWB-A0-RKT" id="VlV-dA-hbP"/>
+                        <outlet property="p2Name" destination="IrA-ax-w9A" id="2fd-k0-IEh"/>
+                        <outlet property="p3Name" destination="ZsX-sg-zdQ" id="ejr-tk-JvU"/>
+                        <outlet property="p4Name" destination="0XW-DO-7Wx" id="XM2-zZ-emX"/>
+                        <outlet property="p5Name" destination="abj-3L-W8b" id="7Ao-ej-dlr"/>
+                        <outlet property="p6Name" destination="NJp-Rg-rQP" id="huu-Me-65N"/>
+                        <outlet property="p7Name" destination="5dT-aw-Ulj" id="HDp-KM-bBi"/>
+                        <outlet property="p8Name" destination="m9Y-vJ-89G" id="ywU-vn-vHv"/>
+                        <outlet property="p9Name" destination="rqz-sf-Dgw" id="4MQ-NY-tVc"/>
+                        <outlet property="threePlayerLabel" destination="6Qw-dD-8B7" id="6q4-Dy-tsy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x1v-lL-vgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Yi8-DY-ars" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2104.8000000000002" y="60.719640179910051"/>
+        </scene>
     </scenes>
     <resources>
         <image name="green" width="1000" height="2000"/>
@@ -511,6 +786,6 @@
         <image name="yellow" width="1000" height="2000"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sUN-rj-2tR"/>
+        <segue reference="i2w-vL-wjt"/>
     </inferredMetricsTieBreakers>
 </document>
