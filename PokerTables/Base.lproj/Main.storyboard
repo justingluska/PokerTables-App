@@ -526,7 +526,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="WBn-Yz-1BA">
-                                <rect key="frame" x="20" y="111.5" width="335" height="208"/>
+                                <rect key="frame" x="20" y="111.5" width="335" height="238"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 players" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qw-dD-8B7">
                                         <rect key="frame" x="108.5" y="0.0" width="118" height="36"/>
@@ -581,10 +581,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="YLY-W6-cXH">
-                                        <rect key="frame" x="167.5" y="138" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="128" y="138" width="79" height="30"/>
                                         <subviews>
-                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P7 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5dT-aw-Ulj" userLabel="p7">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P7 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5dT-aw-Ulj" userLabel="p7">
+                                                <rect key="frame" x="0.0" y="0.0" width="79" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="continue" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
@@ -604,7 +604,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Zdz-2Q-6Et">
-                                        <rect key="frame" x="167.5" y="152" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="167.5" y="182" width="0.0" height="0.0"/>
                                         <subviews>
                                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P10 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zpX-o7-mQe" userLabel="p10">
                                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
@@ -627,7 +627,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="3hX-qr-qkW">
-                                        <rect key="frame" x="167.5" y="166" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="167.5" y="196" width="0.0" height="0.0"/>
                                         <subviews>
                                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P13 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sOr-Iw-t9P" userLabel="p13">
                                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
@@ -650,7 +650,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="ylo-v4-x1M">
-                                        <rect key="frame" x="167.5" y="180" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="167.5" y="210" width="0.0" height="0.0"/>
                                         <subviews>
                                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P16 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fGE-hc-fwS" userLabel="p16">
                                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
@@ -673,7 +673,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="RiL-5G-fJ8">
-                                        <rect key="frame" x="167.5" y="194" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="167.5" y="224" width="0.0" height="0.0"/>
                                         <subviews>
                                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P19 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3YW-DZ-mlc" userLabel="p19">
                                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
@@ -696,7 +696,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="xKM-MJ-Y5J">
-                                        <rect key="frame" x="167.5" y="208" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="167.5" y="238" width="0.0" height="0.0"/>
                                         <subviews>
                                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="P22 Name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bIF-Yc-bti" userLabel="p22">
                                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>

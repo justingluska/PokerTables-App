@@ -36,6 +36,7 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
         self.p22Name.delegate = self
         self.p23Name.delegate = self
         self.p24Name.delegate = self
+        p7Name.isHidden = true
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
@@ -423,13 +424,14 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
         threePlayerAmount = Int(sender.value) * 3
         threePlayerLabel.text = "\(threePlayerAmount) players"
         if(threePlayerAmount == 6){
+            print("found 6")
             p1Name.isHidden = false
             p2Name.isHidden = false
             p3Name.isHidden = false
             p4Name.isHidden = false
             p5Name.isHidden = false
             p6Name.isHidden = false
-            p7Name.isHidden = true
+            p7Name.isHidden = false
             p8Name.isHidden = true
             p9Name.isHidden = true
             p10Name.isHidden = true
