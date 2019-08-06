@@ -495,7 +495,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fp-DG-Lht">
                                 <rect key="frame" x="20" y="603" width="335" height="44"/>
                                 <color key="backgroundColor" red="0.53108698129999998" green="0.1864177883" blue="0.098790563639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <state key="normal" title="GENERATE">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -512,21 +512,11 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THREE TABLES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUK-t4-ewm">
-                                <rect key="frame" x="100" y="35" width="175" height="26.5"/>
+                                <rect key="frame" x="20" y="35" width="335" height="26.5"/>
                                 <fontDescription key="fontDescription" name="MyriadApple-Semibold" family="Myriad Apple" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kya-dj-TD0">
-                                <rect key="frame" x="20" y="553" width="75" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="0.53108698129999998" green="0.1864177883" blue="0.098790563639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="t5F-ud-cZT" kind="show" id="i2w-vL-wjt"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="WBn-Yz-1BA">
                                 <rect key="frame" x="20" y="111.5" width="335" height="388"/>
                                 <subviews>
@@ -722,6 +712,33 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qgD-Gu-h8E">
+                                <rect key="frame" x="20" y="558" width="335" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kya-dj-TD0">
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="0.53108698129999998" green="0.1864177883" blue="0.098790563639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="t5F-ud-cZT" kind="show" id="i2w-vL-wjt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvb-R3-VOC">
+                                        <rect key="frame" x="177.5" y="0.0" width="157.5" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" red="0.53108698129999998" green="0.1864177883" blue="0.098790563639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clearInput:" destination="3Op-s4-CNS" eventType="touchUpInside" id="9aP-5R-PcS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -729,24 +746,28 @@
                             <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="7fp-DG-Lht" secondAttribute="trailing" constant="20" id="29r-4H-m8y"/>
                             <constraint firstItem="suK-7m-rqB" firstAttribute="bottom" secondItem="7fp-DG-Lht" secondAttribute="bottom" constant="20" id="7kA-Ar-YaN"/>
                             <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="WBn-Yz-1BA" secondAttribute="trailing" constant="20" id="8bk-8Z-x5c"/>
+                            <constraint firstItem="7fp-DG-Lht" firstAttribute="top" secondItem="qgD-Gu-h8E" secondAttribute="bottom" constant="15" id="Bfw-vH-b5h"/>
                             <constraint firstItem="JfY-Be-IWM" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="30" id="IDj-Fs-nnV"/>
-                            <constraint firstItem="Kya-dj-TD0" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="20" id="OOp-jR-838"/>
-                            <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="Kya-dj-TD0" secondAttribute="trailing" constant="280" id="Q7i-E3-MzX"/>
+                            <constraint firstItem="qgD-Gu-h8E" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="20" id="LX6-1c-ddm"/>
                             <constraint firstItem="WBn-Yz-1BA" firstAttribute="top" secondItem="JfY-Be-IWM" secondAttribute="bottom" constant="10" id="Rwm-pd-9tj"/>
-                            <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="CUK-t4-ewm" secondAttribute="trailing" constant="100" id="Udb-cD-gRt"/>
+                            <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="CUK-t4-ewm" secondAttribute="trailing" constant="20" id="W4I-uF-yQF"/>
+                            <constraint firstItem="CUK-t4-ewm" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="20" id="Wur-tJ-PYA"/>
                             <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="7fp-DG-Lht" secondAttribute="trailing" constant="20" id="Z0a-gi-hFb"/>
                             <constraint firstItem="WBn-Yz-1BA" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="20" id="ceP-VF-v7f"/>
                             <constraint firstItem="7fp-DG-Lht" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="20" id="dMm-it-3qc"/>
-                            <constraint firstItem="CUK-t4-ewm" firstAttribute="leading" secondItem="suK-7m-rqB" secondAttribute="leading" constant="100" id="fLY-f1-Lx0"/>
                             <constraint firstItem="JfY-Be-IWM" firstAttribute="top" secondItem="CUK-t4-ewm" secondAttribute="bottom" constant="10" id="r2s-VK-J8E"/>
                             <constraint firstItem="UV7-In-Orx" firstAttribute="centerY" secondItem="qVQ-CS-S2a" secondAttribute="centerY" id="sQu-na-1OY"/>
                             <constraint firstItem="UV7-In-Orx" firstAttribute="centerX" secondItem="qVQ-CS-S2a" secondAttribute="centerX" id="tzy-RI-9PE"/>
-                            <constraint firstItem="7fp-DG-Lht" firstAttribute="top" secondItem="Kya-dj-TD0" secondAttribute="bottom" constant="20" id="vtT-Gb-yey"/>
                             <constraint firstItem="CUK-t4-ewm" firstAttribute="top" secondItem="suK-7m-rqB" secondAttribute="top" constant="15" id="wvG-ip-JkJ"/>
+                            <constraint firstItem="suK-7m-rqB" firstAttribute="trailing" secondItem="qgD-Gu-h8E" secondAttribute="trailing" constant="20" id="xRz-7n-Yf8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="suK-7m-rqB"/>
                     </view>
                     <connections>
+                        <outlet property="eigthStack" destination="xKM-MJ-Y5J" id="j4T-ZL-yLJ"/>
+                        <outlet property="fifthStack" destination="3hX-qr-qkW" id="NA8-Bh-uZt"/>
+                        <outlet property="firstStack" destination="Sbf-6H-z27" id="Y2e-E5-rpW"/>
+                        <outlet property="fourthStack" destination="Zdz-2Q-6Et" id="nQn-Ti-9O1"/>
                         <outlet property="p10Name" destination="zpX-o7-mQe" id="Kww-Wh-3kp"/>
                         <outlet property="p11Name" destination="anI-fV-ocE" id="7dR-X0-BOC"/>
                         <outlet property="p12Name" destination="qY2-D8-AIF" id="uQu-7L-XWO"/>
@@ -771,6 +792,10 @@
                         <outlet property="p7Name" destination="5dT-aw-Ulj" id="HDp-KM-bBi"/>
                         <outlet property="p8Name" destination="m9Y-vJ-89G" id="ywU-vn-vHv"/>
                         <outlet property="p9Name" destination="rqz-sf-Dgw" id="4MQ-NY-tVc"/>
+                        <outlet property="secondStack" destination="96T-kz-wDb" id="o8k-nc-vmg"/>
+                        <outlet property="seventhStack" destination="RiL-5G-fJ8" id="7CG-K6-o8v"/>
+                        <outlet property="sixthStack" destination="ylo-v4-x1M" id="nGH-Ri-lKs"/>
+                        <outlet property="thirdStack" destination="YLY-W6-cXH" id="bvA-bl-qP4"/>
                         <outlet property="threePlayerLabel" destination="6Qw-dD-8B7" id="6q4-Dy-tsy"/>
                     </connections>
                 </viewController>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class ThreeTable: UIViewController, UITextFieldDelegate {
 
@@ -36,26 +37,14 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
         self.p22Name.delegate = self
         self.p23Name.delegate = self
         self.p24Name.delegate = self
-        p7Name.isHidden = true
-        p8Name.isHidden = true
-        p9Name.isHidden = true
-        p10Name.isHidden = true
-        p11Name.isHidden = true
-        p12Name.isHidden = true
-        p13Name.isHidden = true
-        p14Name.isHidden = true
-        p15Name.isHidden = true
-        p16Name.isHidden = true
-        p17Name.isHidden = true
-        p18Name.isHidden = true
-        p19Name.isHidden = true
-        p20Name.isHidden = true
-        p21Name.isHidden = true
-        p22Name.isHidden = true
-        p23Name.isHidden = true
-        p24Name.isHidden = true
+        thirdStack.isHidden = true
+        fourthStack.isHidden = true
+        fifthStack.isHidden = true
+        sixthStack.isHidden = true
+        seventhStack.isHidden = true
+        eigthStack.isHidden = true
     }
-
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
     }
@@ -428,193 +417,88 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var p22Name: UITextField!
     @IBOutlet weak var p23Name: UITextField!
     @IBOutlet weak var p24Name: UITextField!
-    @IBOutlet weak var p25Name: UITextField!
+    
+    @IBOutlet weak var firstStack: UIStackView!
+    @IBOutlet weak var secondStack: UIStackView!
+    @IBOutlet weak var thirdStack: UIStackView!
+    @IBOutlet weak var fourthStack: UIStackView!
+    @IBOutlet weak var fifthStack: UIStackView!
+    @IBOutlet weak var sixthStack: UIStackView!
+    @IBOutlet weak var seventhStack: UIStackView!
+    @IBOutlet weak var eigthStack: UIStackView!
     
     @IBAction func threeSlider(_ sender: UISlider) {
         threePlayerAmount = Int(sender.value) * 3
         threePlayerLabel.text = "\(threePlayerAmount) players"
         if(threePlayerAmount == 6){
-            print("found 6")
-            p1Name.isHidden = false
-            p2Name.isHidden = false
-            p3Name.isHidden = false
-            p4Name.isHidden = false
-            p5Name.isHidden = false
-            p6Name.isHidden = false
-            p7Name.isHidden = false
-            p8Name.isHidden = true
-            p9Name.isHidden = true
-            p10Name.isHidden = true
-            p11Name.isHidden = true
-            p12Name.isHidden = true
-            p13Name.isHidden = true
-            p14Name.isHidden = true
-            p15Name.isHidden = true
-            p16Name.isHidden = true
-            p17Name.isHidden = true
-            p18Name.isHidden = true
-            p19Name.isHidden = true
-            p20Name.isHidden = true
-            p21Name.isHidden = true
-            p22Name.isHidden = true
-            p23Name.isHidden = true
-            p24Name.isHidden = true
+            firstStack.isHidden = false
+            secondStack.isHidden = false
+            thirdStack.isHidden = true
+            fourthStack.isHidden = true
+            fifthStack.isHidden = true
+            sixthStack.isHidden = true
+            seventhStack.isHidden = true
+            eigthStack.isHidden = true
         }
         else if(threePlayerAmount == 9){
-            p1Name.isHidden = false
-            p2Name.isHidden = false
-            p3Name.isHidden = false
-            p4Name.isHidden = false
-            p5Name.isHidden = false
-            p6Name.isHidden = false
-            p7Name.isHidden = false
-            p8Name.isHidden = false
-            p9Name.isHidden = false
-            p10Name.isHidden = true
-            p11Name.isHidden = true
-            p12Name.isHidden = true
-            p13Name.isHidden = true
-            p14Name.isHidden = true
-            p15Name.isHidden = true
-            p16Name.isHidden = true
-            p17Name.isHidden = true
-            p18Name.isHidden = true
-            p19Name.isHidden = true
-            p20Name.isHidden = true
-            p21Name.isHidden = true
-            p22Name.isHidden = true
-            p23Name.isHidden = true
-            p24Name.isHidden = true
+            firstStack.isHidden = false
+            secondStack.isHidden = false
+            thirdStack.isHidden = false
+            fourthStack.isHidden = true
+            fifthStack.isHidden = true
+            sixthStack.isHidden = true
+            seventhStack.isHidden = true
+            eigthStack.isHidden = true
         }
         else if(threePlayerAmount == 12){
-            p1Name.isHidden = false
-            p2Name.isHidden = false
-            p3Name.isHidden = false
-            p4Name.isHidden = false
-            p5Name.isHidden = false
-            p6Name.isHidden = false
-            p7Name.isHidden = false
-            p8Name.isHidden = false
-            p9Name.isHidden = false
-            p10Name.isHidden = false
-            p11Name.isHidden = false
-            p12Name.isHidden = false
-            p13Name.isHidden = true
-            p14Name.isHidden = true
-            p15Name.isHidden = true
-            p16Name.isHidden = true
-            p17Name.isHidden = true
-            p18Name.isHidden = true
-            p19Name.isHidden = true
-            p20Name.isHidden = true
-            p21Name.isHidden = true
-            p22Name.isHidden = true
-            p23Name.isHidden = true
-            p24Name.isHidden = true
+            firstStack.isHidden = false
+            secondStack.isHidden = false
+            thirdStack.isHidden = false
+            fourthStack.isHidden = false
+            fifthStack.isHidden = true
+            sixthStack.isHidden = true
+            seventhStack.isHidden = true
+            eigthStack.isHidden = true
         }
         else if(threePlayerAmount == 15){
-            p1Name.isHidden = false
-            p2Name.isHidden = false
-            p3Name.isHidden = false
-            p4Name.isHidden = false
-            p5Name.isHidden = false
-            p6Name.isHidden = false
-            p7Name.isHidden = false
-            p8Name.isHidden = false
-            p9Name.isHidden = false
-            p10Name.isHidden = false
-            p11Name.isHidden = false
-            p12Name.isHidden = false
-            p13Name.isHidden = false
-            p14Name.isHidden = false
-            p15Name.isHidden = false
-            p16Name.isHidden = true
-            p17Name.isHidden = true
-            p18Name.isHidden = true
-            p19Name.isHidden = true
-            p20Name.isHidden = true
-            p21Name.isHidden = true
-            p22Name.isHidden = true
-            p23Name.isHidden = true
-            p24Name.isHidden = true
+            firstStack.isHidden = false
+            secondStack.isHidden = false
+            thirdStack.isHidden = false
+            fourthStack.isHidden = false
+            fifthStack.isHidden = false
+            sixthStack.isHidden = true
+            seventhStack.isHidden = true
+            eigthStack.isHidden = true
         }
         else if(threePlayerAmount == 18){
-            p1Name.isHidden = false
-            p2Name.isHidden = false
-            p3Name.isHidden = false
-            p4Name.isHidden = false
-            p5Name.isHidden = false
-            p6Name.isHidden = false
-            p7Name.isHidden = false
-            p8Name.isHidden = false
-            p9Name.isHidden = false
-            p10Name.isHidden = false
-            p11Name.isHidden = false
-            p12Name.isHidden = false
-            p13Name.isHidden = false
-            p14Name.isHidden = false
-            p15Name.isHidden = false
-            p16Name.isHidden = false
-            p17Name.isHidden = false
-            p18Name.isHidden = false
-            p19Name.isHidden = true
-            p20Name.isHidden = true
-            p21Name.isHidden = true
-            p22Name.isHidden = true
-            p23Name.isHidden = true
-            p24Name.isHidden = true
+            firstStack.isHidden = false
+            secondStack.isHidden = false
+            thirdStack.isHidden = false
+            fourthStack.isHidden = false
+            fifthStack.isHidden = false
+            sixthStack.isHidden = false
+            seventhStack.isHidden = true
+            eigthStack.isHidden = true
         }
         else if(threePlayerAmount == 21){
-            p1Name.isHidden = false
-            p2Name.isHidden = false
-            p3Name.isHidden = false
-            p4Name.isHidden = false
-            p5Name.isHidden = false
-            p6Name.isHidden = false
-            p7Name.isHidden = false
-            p8Name.isHidden = false
-            p9Name.isHidden = false
-            p10Name.isHidden = false
-            p11Name.isHidden = false
-            p12Name.isHidden = false
-            p13Name.isHidden = false
-            p14Name.isHidden = false
-            p15Name.isHidden = false
-            p16Name.isHidden = false
-            p17Name.isHidden = false
-            p18Name.isHidden = false
-            p19Name.isHidden = false
-            p20Name.isHidden = false
-            p21Name.isHidden = false
-            p22Name.isHidden = true
-            p23Name.isHidden = true
-            p24Name.isHidden = true
+            firstStack.isHidden = false
+            secondStack.isHidden = false
+            thirdStack.isHidden = false
+            fourthStack.isHidden = false
+            fifthStack.isHidden = false
+            sixthStack.isHidden = false
+            seventhStack.isHidden = false
+            eigthStack.isHidden = true
         }
         else if(threePlayerAmount == 24){
-            p1Name.isHidden = false
-            p2Name.isHidden = false
-            p3Name.isHidden = false
-            p4Name.isHidden = false
-            p5Name.isHidden = false
-            p6Name.isHidden = false
-            p7Name.isHidden = false
-            p8Name.isHidden = false
-            p9Name.isHidden = false
-            p10Name.isHidden = false
-            p11Name.isHidden = false
-            p12Name.isHidden = false
-            p13Name.isHidden = false
-            p14Name.isHidden = false
-            p15Name.isHidden = false
-            p16Name.isHidden = false
-            p17Name.isHidden = false
-            p18Name.isHidden = false
-            p19Name.isHidden = false
-            p20Name.isHidden = false
-            p21Name.isHidden = false
-            p22Name.isHidden = false
-            p23Name.isHidden = false
-            p24Name.isHidden = false
+            firstStack.isHidden = false
+            secondStack.isHidden = false
+            thirdStack.isHidden = false
+            fourthStack.isHidden = false
+            fifthStack.isHidden = false
+            sixthStack.isHidden = false
+            seventhStack.isHidden = false
+            eigthStack.isHidden = false
         }
     }
     
@@ -674,13 +558,102 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
         threePlayerNames.player24 = p16Name.text!
     }
     
+    func clearNames(){
+        p1Name.text = ""
+        p2Name.text = ""
+        p3Name.text = ""
+        p4Name.text = ""
+        p5Name.text = ""
+        p6Name.text = ""
+        p7Name.text = ""
+        p8Name.text = ""
+        p9Name.text = ""
+        p10Name.text = ""
+        p11Name.text = ""
+        p12Name.text = ""
+        p13Name.text = ""
+        p14Name.text = ""
+        p15Name.text = ""
+        p16Name.text = ""
+        p17Name.text = ""
+        p18Name.text = ""
+        p19Name.text = ""
+        p20Name.text = ""
+        p21Name.text = ""
+        p22Name.text = ""
+        p23Name.text = ""
+        p24Name.text = ""
+    }
+    
+    @IBAction func clearInput(_ sender: Any) {
+        clearConfirm()
+    }
+    
+    func clearConfirm(){
+        var alertController = UIAlertController(title: "CLEAR TEXT", message: "Are you sure you want to clear the current player names?", preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { action in
+            self.clearNames()
+        }))
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func generateButton(_ sender: UIButton) {
+        
         if(threePlayerAmount == 6){
             checkEmpty()
             setNames()
             let threeTab = [threePlayerNames.player1, threePlayerNames.player2, threePlayerNames.player3, threePlayerNames.player4, threePlayerNames.player5, threePlayerNames.player6].shuffled()
             let alert = UIAlertController(title:"3 TABLE POKER FOR 6", message:"\nTABLE 1: \(threeTab[0]), \(threeTab[1])\n\nTABLE 2: \(threeTab[2]), \(threeTab[3]) \n\nTABLE 3: \(threeTab[4]), \(threeTab[5])", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
+            alert.addAction(UIAlertAction(title:"Got it", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        if(threePlayerAmount == 9){
+            checkEmpty()
+            setNames()
+            let threeTab = [threePlayerNames.player1, threePlayerNames.player2, threePlayerNames.player3, threePlayerNames.player4, threePlayerNames.player5, threePlayerNames.player6, threePlayerNames.player7, threePlayerNames.player8, threePlayerNames.player9].shuffled()
+            let alert = UIAlertController(title:"3 TABLE POKER FOR 9", message:"\nTABLE 1: \(threeTab[0]), \(threeTab[1]), \(threeTab[2])\n\nTABLE 2: \(threeTab[3]), \(threeTab[4]), \(threeTab[5]) \n\nTABLE 3: \(threeTab[6]), \(threeTab[7]), \(threeTab[8])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Got it", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        if(threePlayerAmount == 12){
+            checkEmpty()
+            setNames()
+            let threeTab = [threePlayerNames.player1, threePlayerNames.player2, threePlayerNames.player3, threePlayerNames.player4, threePlayerNames.player5, threePlayerNames.player6, threePlayerNames.player7, threePlayerNames.player8, threePlayerNames.player9, threePlayerNames.player10, threePlayerNames.player11, threePlayerNames.player12].shuffled()
+            let alert = UIAlertController(title:"3 TABLE POKER FOR 12", message:"\nTABLE 1: \(threeTab[0]), \(threeTab[1]), \(threeTab[2]), \(threeTab[3])\n\nTABLE 2: \(threeTab[4]), \(threeTab[5]), \(threeTab[6]), \(threeTab[7]) \n\nTABLE 3: \(threeTab[8]), \(threeTab[9]), \(threeTab[10]), \(threeTab[11])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Got it", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        if(threePlayerAmount == 15){
+            checkEmpty()
+            setNames()
+            let threeTab = [threePlayerNames.player1, threePlayerNames.player2, threePlayerNames.player3, threePlayerNames.player4, threePlayerNames.player5, threePlayerNames.player6, threePlayerNames.player7, threePlayerNames.player8, threePlayerNames.player9, threePlayerNames.player10, threePlayerNames.player11, threePlayerNames.player12,threePlayerNames.player13, threePlayerNames.player14, threePlayerNames.player15].shuffled()
+            let alert = UIAlertController(title:"3 TABLE POKER FOR 15", message:"\nTABLE 1: \(threeTab[0]), \(threeTab[1]), \(threeTab[2]), \(threeTab[3]), \(threeTab[4])\n\nTABLE 2: \(threeTab[5]), \(threeTab[6]), \(threeTab[7]), \(threeTab[8]), \(threeTab[9]) \n\nTABLE 3: \(threeTab[10]), \(threeTab[11]), \(threeTab[12]), \(threeTab[13]), \(threeTab[14])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Got it", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        if(threePlayerAmount == 18){
+            checkEmpty()
+            setNames()
+            let threeTab = [threePlayerNames.player1, threePlayerNames.player2, threePlayerNames.player3, threePlayerNames.player4, threePlayerNames.player5, threePlayerNames.player6, threePlayerNames.player7, threePlayerNames.player8, threePlayerNames.player9, threePlayerNames.player10, threePlayerNames.player11, threePlayerNames.player12,threePlayerNames.player13, threePlayerNames.player14, threePlayerNames.player15, threePlayerNames.player16, threePlayerNames.player17, threePlayerNames.player18].shuffled()
+            let alert = UIAlertController(title:"3 TABLE POKER FOR 18", message:"\nTABLE 1: \(threeTab[0]), \(threeTab[1]), \(threeTab[2]), \(threeTab[3]), \(threeTab[4]), \(threeTab[5])\n\nTABLE 2: \(threeTab[6]), \(threeTab[7]), \(threeTab[8]), \(threeTab[9]), \(threeTab[10]), \(threeTab[11]) \n\nTABLE 3: \(threeTab[12]), \(threeTab[13]), \(threeTab[14]), \(threeTab[15]), \(threeTab[16]), \(threeTab[17])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Got it", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        if(threePlayerAmount == 21){
+            checkEmpty()
+            setNames()
+            let threeTab = [threePlayerNames.player1, threePlayerNames.player2, threePlayerNames.player3, threePlayerNames.player4, threePlayerNames.player5, threePlayerNames.player6, threePlayerNames.player7, threePlayerNames.player8, threePlayerNames.player9, threePlayerNames.player10, threePlayerNames.player11, threePlayerNames.player12,threePlayerNames.player13, threePlayerNames.player14, threePlayerNames.player15, threePlayerNames.player16, threePlayerNames.player17, threePlayerNames.player18, threePlayerNames.player19, threePlayerNames.player20, threePlayerNames.player21].shuffled()
+            let alert = UIAlertController(title:"3 TABLE POKER FOR 21", message:"\nTABLE 1: \(threeTab[0]), \(threeTab[1]), \(threeTab[2]), \(threeTab[3]), \(threeTab[4]), \(threeTab[5]), \(threeTab[6])\n\nTABLE 2: \(threeTab[7]), \(threeTab[8]), \(threeTab[9]), \(threeTab[10]), \(threeTab[11]), \(threeTab[12]), \(threeTab[13]) \n\nTABLE 3: \(threeTab[14]), \(threeTab[15]), \(threeTab[16]), \(threeTab[17]), \(threeTab[18]), \(threeTab[19]), \(threeTab[20])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Got it", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        if(threePlayerAmount == 24){
+            checkEmpty()
+            setNames()
+            let threeTab = [threePlayerNames.player1, threePlayerNames.player2, threePlayerNames.player3, threePlayerNames.player4, threePlayerNames.player5, threePlayerNames.player6, threePlayerNames.player7, threePlayerNames.player8, threePlayerNames.player9, threePlayerNames.player10, threePlayerNames.player11, threePlayerNames.player12,threePlayerNames.player13, threePlayerNames.player14, threePlayerNames.player15, threePlayerNames.player16, threePlayerNames.player17, threePlayerNames.player18, threePlayerNames.player19, threePlayerNames.player20, threePlayerNames.player21, threePlayerNames.player22, threePlayerNames.player23, threePlayerNames.player24].shuffled()
+            let alert = UIAlertController(title:"3 TABLE POKER FOR 24", message:"\nTABLE 1: \(threeTab[0]), \(threeTab[1]), \(threeTab[2]), \(threeTab[3]), \(threeTab[4]), \(threeTab[5]), \(threeTab[6]), \(threeTab[7])\n\nTABLE 2: \(threeTab[8]), \(threeTab[9]), \(threeTab[10]), \(threeTab[11]), \(threeTab[12]), \(threeTab[13]), \(threeTab[14]), \(threeTab[15]) \n\nTABLE 3: \(threeTab[16]), \(threeTab[17]), \(threeTab[18]), \(threeTab[19]), \(threeTab[20]), \(threeTab[21]), \(threeTab[22]), \(threeTab[23])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Got it", style: .default, handler: nil))
             self.present(alert, animated: true)
         }
     }
