@@ -18,6 +18,9 @@
 		D026ED5222F893D000C3F7EB /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026ED5122F893D000C3F7EB /* Calculate.swift */; };
 		D038670922F93445007F290B /* ThreeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038670822F93445007F290B /* ThreeTable.swift */; };
 		D0A1E97A22F896A600C445B8 /* TwoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1E97922F896A500C445B8 /* TwoTable.swift */; };
+		D0E4DFEF22FA8A5000524C12 /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4DFEE22FA8A5000524C12 /* Selector.swift */; };
+		D0E4DFF122FA8BC500524C12 /* launch.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D0E4DFF022FA8BC500524C12 /* launch.JPG */; };
+		D0E4DFF322FA92C300524C12 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E4DFF222FA92C300524C12 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		D026ED5122F893D000C3F7EB /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		D038670822F93445007F290B /* ThreeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeTable.swift; sourceTree = "<group>"; };
 		D0A1E97922F896A500C445B8 /* TwoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TwoTable.swift; path = /Users/justin/Documents/XCode/PokerTables/PokerTables/TwoTable.swift; sourceTree = "<absolute>"; };
+		D0E4DFEE22FA8A5000524C12 /* Selector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selector.swift; sourceTree = "<group>"; };
+		D0E4DFF022FA8BC500524C12 /* launch.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launch.JPG; path = ../../../../Downloads/launch.JPG; sourceTree = "<group>"; };
+		D0E4DFF222FA92C300524C12 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../Desktop/logo.png; sourceTree = "<group>"; };
 		D9F791EF521544153DA281AE /* Pods-PokerTables.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTables.release.xcconfig"; path = "Target Support Files/Pods-PokerTables/Pods-PokerTables.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,18 +95,20 @@
 		D01E743022F727270041ED94 /* PokerTables */ = {
 			isa = PBXGroup;
 			children = (
-				D01E744822F792EB0041ED94 /* IMAGES */,
 				D01E743122F727270041ED94 /* AppDelegate.swift */,
 				D01E743322F727270041ED94 /* ViewController.swift */,
 				D026ED5122F893D000C3F7EB /* Calculate.swift */,
 				D0A1E97922F896A500C445B8 /* TwoTable.swift */,
 				D038670822F93445007F290B /* ThreeTable.swift */,
 				D01E743522F727270041ED94 /* Main.storyboard */,
+				D0E4DFEE22FA8A5000524C12 /* Selector.swift */,
 				D01E743B22F727280041ED94 /* Assets.xcassets */,
 				D01E743D22F727280041ED94 /* LaunchScreen.storyboard */,
 				D01E744022F727280041ED94 /* Info.plist */,
 				D01E743822F727270041ED94 /* PokerTables.xcdatamodeld */,
 				D006A3A122F7BC2E00D6E77E /* GoogleService-Info.plist */,
+				D0E4DFF022FA8BC500524C12 /* launch.JPG */,
+				D0E4DFF222FA92C300524C12 /* logo.png */,
 				D01E744622F7412F0041ED94 /* FONTS */,
 			);
 			path = PokerTables;
@@ -112,13 +120,6 @@
 				D01E744722F7414B0041ED94 /* MYRIADAS.TTF */,
 			);
 			path = FONTS;
-			sourceTree = "<group>";
-		};
-		D01E744822F792EB0041ED94 /* IMAGES */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IMAGES;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +184,8 @@
 			files = (
 				D01E743F22F727280041ED94 /* LaunchScreen.storyboard in Resources */,
 				D006A3A222F7BC2E00D6E77E /* GoogleService-Info.plist in Resources */,
+				D0E4DFF322FA92C300524C12 /* logo.png in Resources */,
+				D0E4DFF122FA8BC500524C12 /* launch.JPG in Resources */,
 				D01E743C22F727280041ED94 /* Assets.xcassets in Resources */,
 				D01E743722F727270041ED94 /* Main.storyboard in Resources */,
 			);
@@ -243,6 +246,7 @@
 				D038670922F93445007F290B /* ThreeTable.swift in Sources */,
 				D01E743222F727270041ED94 /* AppDelegate.swift in Sources */,
 				D026ED5222F893D000C3F7EB /* Calculate.swift in Sources */,
+				D0E4DFEF22FA8A5000524C12 /* Selector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

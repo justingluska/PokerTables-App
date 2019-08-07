@@ -590,7 +590,7 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
     }
     
     func clearConfirm(){
-        var alertController = UIAlertController(title: "CLEAR TEXT", message: "Are you sure you want to clear the current player names?", preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "CLEAR TEXT", message: "Are you sure you want to clear the current player names?", preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { action in
             self.clearNames()
         }))
