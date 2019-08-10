@@ -183,7 +183,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow" translatesAutoresizingMaskIntoConstraints="NO" id="o49-0b-Os4">
-                                <rect key="frame" x="-252.66666666666663" y="-437.33333333333326" width="666.66666666666663" height="1333.3333333333333"/>
+                                <rect key="frame" x="-252.66666666666666" y="-437.33333333333331" width="666.66666666666663" height="1333.3333333333333"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzD-hB-Cp8">
                                 <rect key="frame" x="147" y="472" width="120" height="80"/>
