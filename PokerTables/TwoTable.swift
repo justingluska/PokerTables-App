@@ -61,230 +61,145 @@ class TwoTable: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    func oneFour(){
+        if((p1Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p2Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p3Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+        if((p4Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    
+    func c5(){
+        if((p5Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c6(){
+        if((p6Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c7(){
+        if((p7Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c8(){
+        if((p8Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c9(){
+        if((p9Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c10(){
+        if((p10Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c11(){
+        if((p11Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c12(){
+        if((p12Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c13(){
+        if((p13Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c14(){
+        if((p14Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c15(){
+        if((p15Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    func c16(){
+        if((p16Name.text ?? "").isEmpty){
+            emptyTextAlert()
+        }
+    }
+    
     func checkEmpty(){
         if(twoPlayerAmount == 4){
-            if((p1Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p2Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p3Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p4Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
+            oneFour()
         }
         else if(twoPlayerAmount == 6){
-            if((p1Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p2Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p3Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p4Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p5Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p6Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
+            oneFour()
+            c5()
+            c6()
         }
         else if(twoPlayerAmount == 8){
-            if((p1Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p2Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p3Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p4Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p5Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p6Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p7Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p8Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
+            oneFour()
+            c5()
+            c6()
+            c7()
+            c8()
         }
         else if(twoPlayerAmount == 10){
-            if((p1Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p2Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p3Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p4Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p5Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p6Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p7Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p8Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p9Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p10Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
+            oneFour()
+            c5()
+            c6()
+            c7()
+            c8()
+            c9()
+            c10()
         }
         else if(twoPlayerAmount == 12){
-            if((p1Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p2Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p3Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p4Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p5Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p6Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p7Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p8Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p9Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p10Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p11Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p12Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
+            oneFour()
+            c5()
+            c6()
+            c7()
+            c8()
+            c9()
+            c10()
+            c11()
+            c12()
         }
         else if(twoPlayerAmount == 14){
-            if((p1Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p2Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p3Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p4Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p5Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p6Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p7Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p8Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p9Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p10Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p11Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p12Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p13Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p14Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
+            oneFour()
+            c5()
+            c6()
+            c7()
+            c8()
+            c9()
+            c10()
+            c11()
+            c12()
+            c13()
+            c14()
         }
         else if(twoPlayerAmount == 16){
-            if((p1Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p2Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p3Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p4Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p5Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p6Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p7Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p8Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p9Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p10Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p11Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p12Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p13Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p14Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p15Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
-            if((p16Name.text ?? "").isEmpty){
-                emptyTextAlert()
-            }
+            oneFour()
+            c5()
+            c6()
+            c7()
+            c8()
+            c9()
+            c10()
+            c11()
+            c12()
+            c13()
+            c14()
+            c15()
+            c16()
         }
     }
     
@@ -388,7 +303,6 @@ class TwoTable: UIViewController, UITextFieldDelegate {
             seventhStack.isHidden = false
             eigthStack.isHidden = false
         }
-
     }
 
     
@@ -457,10 +371,5 @@ class TwoTable: UIViewController, UITextFieldDelegate {
             alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
             self.present(alert, animated: true)
         }
-        
-        
-
     }
-    
-    
 }
