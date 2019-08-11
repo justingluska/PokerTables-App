@@ -10,6 +10,9 @@ import UIKit
 class TwoTable: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
+        backB.layer.cornerRadius = 10
+        clearB.layer.cornerRadius = 10
+        generateB.layer.cornerRadius = 15
         self.p1Name.delegate = self
         self.p2Name.delegate = self
         self.p3Name.delegate = self
@@ -28,6 +31,11 @@ class TwoTable: UIViewController, UITextFieldDelegate {
         self.p16Name.delegate = self
         super.viewDidLoad()
     }
+    
+    @IBOutlet weak var backB: UIButton!
+    @IBOutlet weak var clearB: UIButton!
+    @IBOutlet weak var generateB: UIButton!
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
