@@ -11,8 +11,19 @@ import MessageUI
 
 class ThreeTable: UIViewController, UITextFieldDelegate {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        genB.layer.cornerRadius = 15
+        backB.layer.cornerRadius = 10
+        clearB.layer.cornerRadius = 10
+        thirdStack.isHidden = true
+        fourthStack.isHidden = true
+        fifthStack.isHidden = true
+        sixthStack.isHidden = true
+        seventhStack.isHidden = true
+        eigthStack.isHidden = true
         self.p1Name.delegate = self
         self.p2Name.delegate = self
         self.p3Name.delegate = self
@@ -44,6 +55,11 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
         seventhStack.isHidden = true
         eigthStack.isHidden = true
     }
+    
+    @IBOutlet weak var backB: UIButton!
+    @IBOutlet weak var clearB: UIButton!
+    @IBOutlet weak var genB: UIButton!
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
@@ -590,11 +606,13 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
     }
     
     func clearConfirm(){
-        let alertController = UIAlertController(title: "CLEAR TEXT", message: "Are you sure you want to clear the current player names?", preferredStyle: UIAlertController.Style.alert)
-        alertController.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { action in
+        let alertController = UIAlertController(title: "CLEAR NAMES", message: "Are you sure you want to clear the current player names?", preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Confirm", style: UIAlertAction.Style.default, handler: { action in
             self.clearNames()
         }))
-        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+        
         self.present(alertController, animated: true, completion: nil)
     }
     
