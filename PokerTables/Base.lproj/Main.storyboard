@@ -560,6 +560,10 @@
                     <connections>
                         <outlet property="backB" destination="Qzw-ZE-deA" id="brv-0O-nZ2"/>
                         <outlet property="clearB" destination="Rm3-bv-tWU" id="Orv-rR-6CE"/>
+                        <outlet property="eigthStack" destination="XYA-YW-Uy9" id="mgS-NV-6OO"/>
+                        <outlet property="fifthStack" destination="5Q8-oz-TbG" id="E2o-8L-f7u"/>
+                        <outlet property="firstStack" destination="rLj-SL-SBD" id="TE5-v1-wZU"/>
+                        <outlet property="fourthStack" destination="W06-Lj-QGr" id="xY8-rJ-1yD"/>
                         <outlet property="generateB" destination="GTd-Da-MhX" id="Zka-Hb-sHL"/>
                         <outlet property="p10Name" destination="DtY-mN-vwg" id="AbL-2D-VJV"/>
                         <outlet property="p11Name" destination="29d-Gq-fcN" id="CJj-UF-eEo"/>
@@ -577,6 +581,10 @@
                         <outlet property="p7Name" destination="xjG-cp-QY4" id="p5f-bw-3th"/>
                         <outlet property="p8Name" destination="Tpx-GO-uOy" id="fxp-Kq-jNU"/>
                         <outlet property="p9Name" destination="qfk-D7-N6Q" id="4Vt-dd-d7Z"/>
+                        <outlet property="secondStack" destination="aB6-zx-vIw" id="c6r-Os-BpT"/>
+                        <outlet property="seventhStack" destination="7zp-tq-0SJ" id="zJD-Ue-oWh"/>
+                        <outlet property="sixthStack" destination="Udg-2P-kkP" id="JyH-e7-OL7"/>
+                        <outlet property="thirdStack" destination="i5e-Bq-A8I" id="49P-s5-DeD"/>
                         <outlet property="twoPlayerLabel" destination="RwQ-bB-2Zc" id="OS3-nG-dhk"/>
                     </connections>
                 </viewController>
