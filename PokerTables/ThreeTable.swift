@@ -48,12 +48,6 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
         self.p22Name.delegate = self
         self.p23Name.delegate = self
         self.p24Name.delegate = self
-        thirdStack.isHidden = true
-        fourthStack.isHidden = true
-        fifthStack.isHidden = true
-        sixthStack.isHidden = true
-        seventhStack.isHidden = true
-        eigthStack.isHidden = true
     }
     
     @IBOutlet weak var backB: UIButton!
@@ -564,14 +558,14 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
         threePlayerNames.player14 = p14Name.text!
         threePlayerNames.player15 = p15Name.text!
         threePlayerNames.player16 = p16Name.text!
-        threePlayerNames.player17 = p9Name.text!
-        threePlayerNames.player18 = p10Name.text!
-        threePlayerNames.player19 = p11Name.text!
-        threePlayerNames.player20 = p12Name.text!
-        threePlayerNames.player21 = p13Name.text!
-        threePlayerNames.player22 = p14Name.text!
-        threePlayerNames.player23 = p15Name.text!
-        threePlayerNames.player24 = p16Name.text!
+        threePlayerNames.player17 = p17Name.text!
+        threePlayerNames.player18 = p18Name.text!
+        threePlayerNames.player19 = p19Name.text!
+        threePlayerNames.player20 = p20Name.text!
+        threePlayerNames.player21 = p21Name.text!
+        threePlayerNames.player22 = p22Name.text!
+        threePlayerNames.player23 = p23Name.text!
+        threePlayerNames.player24 = p24Name.text!
     }
     
     func clearNames(){

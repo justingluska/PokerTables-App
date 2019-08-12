@@ -17,6 +17,7 @@
 		D01E743F22F727280041ED94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01E743D22F727280041ED94 /* LaunchScreen.storyboard */; };
 		D026ED5222F893D000C3F7EB /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026ED5122F893D000C3F7EB /* Calculate.swift */; };
 		D038670922F93445007F290B /* ThreeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038670822F93445007F290B /* ThreeTable.swift */; };
+		D064C9CB2301C6A6007E79CB /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064C9CA2301C6A6007E79CB /* Help.swift */; };
 		D0898BCC22FF46F100F26629 /* homebig.png in Resources */ = {isa = PBXBuildFile; fileRef = D0898BCB22FF46F100F26629 /* homebig.png */; };
 		D0898BD222FF472500F26629 /* purple.png in Resources */ = {isa = PBXBuildFile; fileRef = D0898BCD22FF472500F26629 /* purple.png */; };
 		D0898BD322FF472500F26629 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D0898BCE22FF472500F26629 /* home.png */; };
@@ -25,6 +26,7 @@
 		D0898BD622FF472500F26629 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = D0898BD122FF472500F26629 /* red.png */; };
 		D0A1E97A22F896A600C445B8 /* TwoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1E97922F896A500C445B8 /* TwoTable.swift */; };
 		D0BFC5622300DB6600741012 /* FourTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BFC5612300DB6600741012 /* FourTable.swift */; };
+		D0C4856B2301C556005EEDD6 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C4856A2301C556005EEDD6 /* info.png */; };
 		D0E4DFEF22FA8A5000524C12 /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4DFEE22FA8A5000524C12 /* Selector.swift */; };
 		D0E4DFF122FA8BC500524C12 /* launch.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D0E4DFF022FA8BC500524C12 /* launch.JPG */; };
 		D0E4DFF322FA92C300524C12 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E4DFF222FA92C300524C12 /* logo.png */; };
@@ -45,6 +47,7 @@
 		D01E744722F7414B0041ED94 /* MYRIADAS.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = MYRIADAS.TTF; path = "../../../../../Downloads/Myriad-Apple-Bold/MYRIADAS.TTF"; sourceTree = "<group>"; };
 		D026ED5122F893D000C3F7EB /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		D038670822F93445007F290B /* ThreeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeTable.swift; sourceTree = "<group>"; };
+		D064C9CA2301C6A6007E79CB /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
 		D0898BCB22FF46F100F26629 /* homebig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homebig.png; path = Assets.xcassets/homebig.png; sourceTree = "<group>"; };
 		D0898BCD22FF472500F26629 /* purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = purple.png; path = Assets.xcassets/purple.png; sourceTree = "<group>"; };
 		D0898BCE22FF472500F26629 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = Assets.xcassets/home.png; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		D0898BD122FF472500F26629 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = Assets.xcassets/red.png; sourceTree = "<group>"; };
 		D0A1E97922F896A500C445B8 /* TwoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TwoTable.swift; path = /Users/justin/Documents/XCode/PokerTables/PokerTables/TwoTable.swift; sourceTree = "<absolute>"; };
 		D0BFC5612300DB6600741012 /* FourTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourTable.swift; sourceTree = "<group>"; };
+		D0C4856A2301C556005EEDD6 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		D0E4DFEE22FA8A5000524C12 /* Selector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selector.swift; sourceTree = "<group>"; };
 		D0E4DFF022FA8BC500524C12 /* launch.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launch.JPG; path = ../../../../Downloads/launch.JPG; sourceTree = "<group>"; };
 		D0E4DFF222FA92C300524C12 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../Desktop/logo.png; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				D0A1E97922F896A500C445B8 /* TwoTable.swift */,
 				D038670822F93445007F290B /* ThreeTable.swift */,
 				D01E743522F727270041ED94 /* Main.storyboard */,
+				D064C9CA2301C6A6007E79CB /* Help.swift */,
 				D0BFC5612300DB6600741012 /* FourTable.swift */,
 				D0E4DFEE22FA8A5000524C12 /* Selector.swift */,
 				D0898BCB22FF46F100F26629 /* homebig.png */,
@@ -129,6 +134,7 @@
 				D01E743822F727270041ED94 /* PokerTables.xcdatamodeld */,
 				D006A3A122F7BC2E00D6E77E /* GoogleService-Info.plist */,
 				D0E4DFF022FA8BC500524C12 /* launch.JPG */,
+				D0C4856A2301C556005EEDD6 /* info.png */,
 				D0E4DFF222FA92C300524C12 /* logo.png */,
 				D01E744622F7412F0041ED94 /* FONTS */,
 			);
@@ -214,6 +220,7 @@
 				D0898BD422FF472500F26629 /* yellow.png in Resources */,
 				D0898BD622FF472500F26629 /* red.png in Resources */,
 				D01E743C22F727280041ED94 /* Assets.xcassets in Resources */,
+				D0C4856B2301C556005EEDD6 /* info.png in Resources */,
 				D01E743722F727270041ED94 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 			files = (
 				D01E743A22F727270041ED94 /* PokerTables.xcdatamodeld in Sources */,
 				D0A1E97A22F896A600C445B8 /* TwoTable.swift in Sources */,
+				D064C9CB2301C6A6007E79CB /* Help.swift in Sources */,
 				D01E743422F727270041ED94 /* ViewController.swift in Sources */,
 				D038670922F93445007F290B /* ThreeTable.swift in Sources */,
 				D01E743222F727270041ED94 /* AppDelegate.swift in Sources */,

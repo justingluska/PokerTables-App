@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
 
         // Initialize Admob
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-9134328104554845~4570256127")
+        GADMobileAds.configure(withApplicationID: "ca-app-pub-9134328104554845~9852263151")
         GADMobileAds.sharedInstance().start(completionHandler: nil)
 
         

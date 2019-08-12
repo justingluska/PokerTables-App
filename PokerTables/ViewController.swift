@@ -16,15 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var helpButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         startButton.layer.cornerRadius = 15
         helpButton.layer.cornerRadius = 15
-        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.adUnitID = "ca-app-pub-9134328104554845/9042356745"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
     }
+    
     
     
     var myName:String = ""

@@ -16,6 +16,18 @@ class Selector: UIViewController {
         butt4.layer.cornerRadius = 7
         back.layer.cornerRadius = 15
         super.viewDidLoad()
+        firstTime()
+    }
+    
+    func firstTime(){
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore  {
+            print("Not first launch.")
+        } else {
+            let alert = UIAlertController(title: "Welcome!", message: "Select the amount of tables you would like to generate, then input your player names. Good luck!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     @IBOutlet weak var butt2: UIButton!
