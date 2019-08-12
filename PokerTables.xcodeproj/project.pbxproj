@@ -24,6 +24,7 @@
 		D0898BD522FF472500F26629 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = D0898BD022FF472500F26629 /* green.png */; };
 		D0898BD622FF472500F26629 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = D0898BD122FF472500F26629 /* red.png */; };
 		D0A1E97A22F896A600C445B8 /* TwoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1E97922F896A500C445B8 /* TwoTable.swift */; };
+		D0BFC5622300DB6600741012 /* FourTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BFC5612300DB6600741012 /* FourTable.swift */; };
 		D0E4DFEF22FA8A5000524C12 /* Selector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E4DFEE22FA8A5000524C12 /* Selector.swift */; };
 		D0E4DFF122FA8BC500524C12 /* launch.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D0E4DFF022FA8BC500524C12 /* launch.JPG */; };
 		D0E4DFF322FA92C300524C12 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E4DFF222FA92C300524C12 /* logo.png */; };
@@ -51,6 +52,7 @@
 		D0898BD022FF472500F26629 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = Assets.xcassets/green.png; sourceTree = "<group>"; };
 		D0898BD122FF472500F26629 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = red.png; path = Assets.xcassets/red.png; sourceTree = "<group>"; };
 		D0A1E97922F896A500C445B8 /* TwoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TwoTable.swift; path = /Users/justin/Documents/XCode/PokerTables/PokerTables/TwoTable.swift; sourceTree = "<absolute>"; };
+		D0BFC5612300DB6600741012 /* FourTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourTable.swift; sourceTree = "<group>"; };
 		D0E4DFEE22FA8A5000524C12 /* Selector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selector.swift; sourceTree = "<group>"; };
 		D0E4DFF022FA8BC500524C12 /* launch.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = launch.JPG; path = ../../../../Downloads/launch.JPG; sourceTree = "<group>"; };
 		D0E4DFF222FA92C300524C12 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../Desktop/logo.png; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				D0A1E97922F896A500C445B8 /* TwoTable.swift */,
 				D038670822F93445007F290B /* ThreeTable.swift */,
 				D01E743522F727270041ED94 /* Main.storyboard */,
+				D0BFC5612300DB6600741012 /* FourTable.swift */,
 				D0E4DFEE22FA8A5000524C12 /* Selector.swift */,
 				D0898BCB22FF46F100F26629 /* homebig.png */,
 				D0898BD022FF472500F26629 /* green.png */,
@@ -270,6 +273,7 @@
 				D038670922F93445007F290B /* ThreeTable.swift in Sources */,
 				D01E743222F727270041ED94 /* AppDelegate.swift in Sources */,
 				D026ED5222F893D000C3F7EB /* Calculate.swift in Sources */,
+				D0BFC5622300DB6600741012 /* FourTable.swift in Sources */,
 				D0E4DFEF22FA8A5000524C12 /* Selector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

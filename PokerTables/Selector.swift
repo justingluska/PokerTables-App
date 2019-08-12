@@ -21,7 +21,6 @@ class Selector: UIViewController {
     @IBOutlet weak var butt2: UIButton!
     @IBOutlet weak var butt3: UIButton!
     @IBOutlet weak var butt4: UIButton!
-    
     @IBOutlet weak var back: UIButton!
     
 

@@ -46,11 +46,9 @@ class TwoTable: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var sixthStack: UIStackView!
     @IBOutlet weak var seventhStack: UIStackView!
     @IBOutlet weak var eigthStack: UIStackView!
-    
     @IBOutlet weak var backB: UIButton!
     @IBOutlet weak var clearB: UIButton!
     @IBOutlet weak var generateB: UIButton!
-    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
@@ -357,7 +355,7 @@ class TwoTable: UIViewController, UITextFieldDelegate {
             checkEmpty()
             setNames()
             let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4, twoPlayerNames.player5, twoPlayerNames.player6].shuffled()
-            let alert = UIAlertController(title:"2 TABLE POKER FOR 4",
+            let alert = UIAlertController(title:"2 TABLE POKER FOR 6",
                                           message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1]), \(twoTab[2])     \n\nTABLE 2: \(twoTab[3]), \(twoTab[4]), \(twoTab[5])", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
             self.present(alert, animated: true)
@@ -366,8 +364,44 @@ class TwoTable: UIViewController, UITextFieldDelegate {
             checkEmpty()
             setNames()
             let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4, twoPlayerNames.player5, twoPlayerNames.player6, twoPlayerNames.player7, twoPlayerNames.player8].shuffled()
-            let alert = UIAlertController(title:"2 TABLE POKER FOR 4",
-                                          message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1]), \(twoTab[2]), \(twoTab[3])     \n\nTABLE 2: \(twoTab[4]), \(twoTab[5]), \(twoTab[6])         ", preferredStyle: .alert)
+            let alert = UIAlertController(title:"2 TABLE POKER FOR 8",
+                                          message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1]), \(twoTab[2]), \(twoTab[3])     \n\nTABLE 2: \(twoTab[4]), \(twoTab[5]), \(twoTab[6]), \(twoTab[7])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else if(twoPlayerAmount == 10){
+            checkEmpty()
+            setNames()
+            let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4, twoPlayerNames.player5, twoPlayerNames.player6, twoPlayerNames.player7, twoPlayerNames.player8, twoPlayerNames.player9, twoPlayerNames.player10].shuffled()
+            let alert = UIAlertController(title:"2 TABLE POKER FOR 10",
+                                          message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1]), \(twoTab[2]), \(twoTab[3]), \(twoTab[4])     \n\nTABLE 2: \(twoTab[5]), \(twoTab[6]), \(twoTab[7]), \(twoTab[8]), \(twoTab[9])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else if(twoPlayerAmount == 12){
+            checkEmpty()
+            setNames()
+            let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4, twoPlayerNames.player5, twoPlayerNames.player6, twoPlayerNames.player7, twoPlayerNames.player8, twoPlayerNames.player9, twoPlayerNames.player10, twoPlayerNames.player11, twoPlayerNames.player12].shuffled()
+            let alert = UIAlertController(title:"2 TABLE POKER FOR 12",
+                                          message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1]), \(twoTab[2]), \(twoTab[3]), \(twoTab[4]), \(twoTab[5])     \n\nTABLE 2: \(twoTab[6]), \(twoTab[7]), \(twoTab[8]), \(twoTab[9]), \(twoTab[10]), \(twoTab[11])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else if(twoPlayerAmount == 14){
+            checkEmpty()
+            setNames()
+            let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4, twoPlayerNames.player5, twoPlayerNames.player6, twoPlayerNames.player7, twoPlayerNames.player8, twoPlayerNames.player9, twoPlayerNames.player10, twoPlayerNames.player11, twoPlayerNames.player12, twoPlayerNames.player13, twoPlayerNames.player14].shuffled()
+            let alert = UIAlertController(title:"2 TABLE POKER FOR 14",
+                                          message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1]), \(twoTab[2]), \(twoTab[3]), \(twoTab[4]), \(twoTab[5]), \(twoTab[6])     \n\nTABLE 2: \(twoTab[7]), \(twoTab[8]), \(twoTab[9]), \(twoTab[10]), \(twoTab[11]), \(twoTab[12]), \(twoTab[13])", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
+        else if(twoPlayerAmount == 16){
+            checkEmpty()
+            setNames()
+            let twoTab = [twoPlayerNames.player1, twoPlayerNames.player2, twoPlayerNames.player3, twoPlayerNames.player4, twoPlayerNames.player5, twoPlayerNames.player6, twoPlayerNames.player7, twoPlayerNames.player8, twoPlayerNames.player9, twoPlayerNames.player10, twoPlayerNames.player11, twoPlayerNames.player12, twoPlayerNames.player13, twoPlayerNames.player14, twoPlayerNames.player15, twoPlayerNames.player16].shuffled()
+            let alert = UIAlertController(title:"2 TABLE POKER FOR 16",
+                                          message:"\nTABLE 1: \(twoTab[0]), \(twoTab[1]), \(twoTab[2]), \(twoTab[3]), \(twoTab[4]), \(twoTab[5]), \(twoTab[6]), \(twoTab[7])     \n\nTABLE 2: \(twoTab[8]), \(twoTab[9]), \(twoTab[10]), \(twoTab[11]), \(twoTab[12]), \(twoTab[13]), \(twoTab[14]), \(twoTab[15])", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title:"Yes", style: .default, handler: nil))
             self.present(alert, animated: true)
         }

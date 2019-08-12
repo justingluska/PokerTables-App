@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     
-    var myName:String = "justin"
+    var myName:String = ""
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
         self.view.endEditing(true)
