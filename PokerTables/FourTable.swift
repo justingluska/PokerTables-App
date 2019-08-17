@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class FourTable: UIViewController, UITextFieldDelegate {
 
+    var interstitial: GADInterstitial!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        fourPlayerAmount = 8
         genB.layer.cornerRadius = 15
         backB.layer.cornerRadius = 10
         clearB.layer.cornerRadius = 10
@@ -53,6 +56,10 @@ class FourTable: UIViewController, UITextFieldDelegate {
         self.p30Name.delegate = self
         self.p31Name.delegate = self
         self.p32Name.delegate = self
+        super.viewDidLoad()
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-9134328104554845/2861737995")
+        let request = GADRequest()
+        interstitial.load(request)
     }
     
     var fourPlayerAmount:Int = 4
@@ -752,7 +759,10 @@ class FourTable: UIViewController, UITextFieldDelegate {
     }
     
     
-    @IBAction func generateButton(_ sender: UIButton) {
+    @IBAction func generateButton(_ sender: Any) {
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        }
         if(fourPlayerAmount == 8){
             checkEmpty()
             setNames()

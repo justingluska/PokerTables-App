@@ -8,15 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		37DD1B29B1B00F484AED760B /* Pods_PokerTables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05173970A013D4D4B5686CA8 /* Pods_PokerTables.framework */; };
-		D006A3A222F7BC2E00D6E77E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D006A3A122F7BC2E00D6E77E /* GoogleService-Info.plist */; };
 		D01E743222F727270041ED94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E743122F727270041ED94 /* AppDelegate.swift */; };
 		D01E743422F727270041ED94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01E743322F727270041ED94 /* ViewController.swift */; };
 		D01E743722F727270041ED94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01E743522F727270041ED94 /* Main.storyboard */; };
 		D01E743A22F727270041ED94 /* PokerTables.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D01E743822F727270041ED94 /* PokerTables.xcdatamodeld */; };
 		D01E743C22F727280041ED94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D01E743B22F727280041ED94 /* Assets.xcassets */; };
 		D01E743F22F727280041ED94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D01E743D22F727280041ED94 /* LaunchScreen.storyboard */; };
-		D026ED5222F893D000C3F7EB /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026ED5122F893D000C3F7EB /* Calculate.swift */; };
 		D038670922F93445007F290B /* ThreeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038670822F93445007F290B /* ThreeTable.swift */; };
+		D05F64BE230882D600ED00DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D05F64BD230882D600ED00DF /* GoogleService-Info.plist */; };
 		D064C9CB2301C6A6007E79CB /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064C9CA2301C6A6007E79CB /* Help.swift */; };
 		D0898BCC22FF46F100F26629 /* homebig.png in Resources */ = {isa = PBXBuildFile; fileRef = D0898BCB22FF46F100F26629 /* homebig.png */; };
 		D0898BD222FF472500F26629 /* purple.png in Resources */ = {isa = PBXBuildFile; fileRef = D0898BCD22FF472500F26629 /* purple.png */; };
@@ -35,7 +34,6 @@
 /* Begin PBXFileReference section */
 		05173970A013D4D4B5686CA8 /* Pods_PokerTables.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokerTables.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CEFCD74989E5126613EDB3 /* Pods-PokerTables.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokerTables.debug.xcconfig"; path = "Target Support Files/Pods-PokerTables/Pods-PokerTables.debug.xcconfig"; sourceTree = "<group>"; };
-		D006A3A122F7BC2E00D6E77E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D01E742E22F727270041ED94 /* PokerTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01E743122F727270041ED94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D01E743322F727270041ED94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,8 +43,8 @@
 		D01E743E22F727280041ED94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D01E744022F727280041ED94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D01E744722F7414B0041ED94 /* MYRIADAS.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = MYRIADAS.TTF; path = "../../../../../Downloads/Myriad-Apple-Bold/MYRIADAS.TTF"; sourceTree = "<group>"; };
-		D026ED5122F893D000C3F7EB /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		D038670822F93445007F290B /* ThreeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeTable.swift; sourceTree = "<group>"; };
+		D05F64BD230882D600ED00DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D064C9CA2301C6A6007E79CB /* Help.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
 		D0898BCB22FF46F100F26629 /* homebig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homebig.png; path = Assets.xcassets/homebig.png; sourceTree = "<group>"; };
 		D0898BCD22FF472500F26629 /* purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = purple.png; path = Assets.xcassets/purple.png; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 			children = (
 				D01E743122F727270041ED94 /* AppDelegate.swift */,
 				D01E743322F727270041ED94 /* ViewController.swift */,
-				D026ED5122F893D000C3F7EB /* Calculate.swift */,
 				D0A1E97922F896A500C445B8 /* TwoTable.swift */,
 				D038670822F93445007F290B /* ThreeTable.swift */,
 				D01E743522F727270041ED94 /* Main.storyboard */,
@@ -131,8 +128,8 @@
 				D01E743B22F727280041ED94 /* Assets.xcassets */,
 				D01E743D22F727280041ED94 /* LaunchScreen.storyboard */,
 				D01E744022F727280041ED94 /* Info.plist */,
+				D05F64BD230882D600ED00DF /* GoogleService-Info.plist */,
 				D01E743822F727270041ED94 /* PokerTables.xcdatamodeld */,
-				D006A3A122F7BC2E00D6E77E /* GoogleService-Info.plist */,
 				D0E4DFF022FA8BC500524C12 /* launch.JPG */,
 				D0C4856A2301C556005EEDD6 /* info.png */,
 				D0E4DFF222FA92C300524C12 /* logo.png */,
@@ -211,7 +208,6 @@
 			files = (
 				D01E743F22F727280041ED94 /* LaunchScreen.storyboard in Resources */,
 				D0898BD522FF472500F26629 /* green.png in Resources */,
-				D006A3A222F7BC2E00D6E77E /* GoogleService-Info.plist in Resources */,
 				D0898BD322FF472500F26629 /* home.png in Resources */,
 				D0898BCC22FF46F100F26629 /* homebig.png in Resources */,
 				D0E4DFF322FA92C300524C12 /* logo.png in Resources */,
@@ -222,6 +218,7 @@
 				D01E743C22F727280041ED94 /* Assets.xcassets in Resources */,
 				D0C4856B2301C556005EEDD6 /* info.png in Resources */,
 				D01E743722F727270041ED94 /* Main.storyboard in Resources */,
+				D05F64BE230882D600ED00DF /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +277,6 @@
 				D01E743422F727270041ED94 /* ViewController.swift in Sources */,
 				D038670922F93445007F290B /* ThreeTable.swift in Sources */,
 				D01E743222F727270041ED94 /* AppDelegate.swift in Sources */,
-				D026ED5222F893D000C3F7EB /* Calculate.swift in Sources */,
 				D0BFC5622300DB6600741012 /* FourTable.swift in Sources */,
 				D0E4DFEF22FA8A5000524C12 /* Selector.swift in Sources */,
 			);

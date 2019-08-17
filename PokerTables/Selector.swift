@@ -14,7 +14,6 @@ class Selector: UIViewController {
         butt2.layer.cornerRadius = 7
         butt3.layer.cornerRadius = 7
         butt4.layer.cornerRadius = 7
-        back.layer.cornerRadius = 15
         super.viewDidLoad()
         firstTime()
     }

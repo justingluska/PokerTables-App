@@ -4,11 +4,13 @@
 //
 //  Created by Justin Gluska on 8/5/19.
 //
-
+import GoogleMobileAds
 import UIKit
 
 class TwoTable: UIViewController, UITextFieldDelegate {
 
+    var interstitial: GADInterstitial!
+    
     override func viewDidLoad() {
         backB.layer.cornerRadius = 10
         clearB.layer.cornerRadius = 10
@@ -36,6 +38,9 @@ class TwoTable: UIViewController, UITextFieldDelegate {
         self.p15Name.delegate = self
         self.p16Name.delegate = self
         super.viewDidLoad()
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-9134328104554845/3850072956")
+        let request = GADRequest()
+        interstitial.load(request)
     }
     
     @IBOutlet weak var firstStack: UIStackView!
@@ -342,7 +347,16 @@ class TwoTable: UIViewController, UITextFieldDelegate {
         twoPlayerNames.player16 = p16Name.text!
     }
     
-    @IBAction func calcTwo(_ sender: UIButton) {
+    @IBAction func calcTwo(_ sender: Any) {
+
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        }
+        cupidShuffle()
+        
+    }
+    
+    func cupidShuffle(){
         if(twoPlayerAmount == 4){
             checkEmpty()
             setNames()
@@ -406,4 +420,6 @@ class TwoTable: UIViewController, UITextFieldDelegate {
             self.present(alert, animated: true)
         }
     }
+    
+    
 }

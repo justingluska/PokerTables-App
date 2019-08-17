@@ -21,9 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch
         // Initialize Firebase
         FirebaseApp.configure()
-
-        // Initialize Admob
-        GADMobileAds.configure(withApplicationID: "ca-app-pub-9134328104554845~9852263151")
         GADMobileAds.sharedInstance().start(completionHandler: nil)
 
         

@@ -7,14 +7,14 @@
 //
 
 import UIKit
-import MessageUI
+import GoogleMobileAds
 
 class ThreeTable: UIViewController, UITextFieldDelegate {
 
-    
+    var interstitial: GADInterstitial!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        threePlayerAmount = 6
         genB.layer.cornerRadius = 15
         backB.layer.cornerRadius = 10
         clearB.layer.cornerRadius = 10
@@ -48,6 +48,10 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
         self.p22Name.delegate = self
         self.p23Name.delegate = self
         self.p24Name.delegate = self
+        super.viewDidLoad()
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-9134328104554845/6557440426")
+        let request = GADRequest()
+        interstitial.load(request)
     }
     
     @IBOutlet weak var backB: UIButton!
@@ -611,7 +615,9 @@ class ThreeTable: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func generateButton(_ sender: UIButton) {
-        
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        }
         if(threePlayerAmount == 6){
             checkEmpty()
             setNames()
