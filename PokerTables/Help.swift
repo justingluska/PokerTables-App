@@ -12,10 +12,6 @@ class Help: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        goBack.layer.cornerRadius = 12
     }
-    
-    @IBOutlet weak var goBack: UIButton!
-    
 
 }

@@ -153,33 +153,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhk-bJ-Vsg">
-                                <rect key="frame" x="15" y="806" width="384" height="36"/>
-                                <color key="backgroundColor" red="0.63981202411167515" green="0.63981202411167515" blue="0.63981202411167515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="20"/>
-                                <state key="normal" title="go back">
-                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="7Do-a0-XfJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dha-Sh-31h" firstAttribute="leading" secondItem="6h5-d4-pTV" secondAttribute="leading" id="0Ml-ob-mT5"/>
-                            <constraint firstItem="6h5-d4-pTV" firstAttribute="trailing" secondItem="bhk-bJ-Vsg" secondAttribute="trailing" constant="15" id="4HQ-Ey-Ww5"/>
                             <constraint firstItem="dha-Sh-31h" firstAttribute="top" secondItem="mZu-Yv-u4u" secondAttribute="top" id="5UP-p8-HJe"/>
                             <constraint firstAttribute="bottom" secondItem="dha-Sh-31h" secondAttribute="bottom" id="8aF-k5-ELj"/>
-                            <constraint firstItem="bhk-bJ-Vsg" firstAttribute="leading" secondItem="6h5-d4-pTV" secondAttribute="leading" constant="15" id="UDB-Gw-gT5"/>
                             <constraint firstItem="dha-Sh-31h" firstAttribute="trailing" secondItem="6h5-d4-pTV" secondAttribute="trailing" id="exv-Vy-48Z"/>
-                            <constraint firstItem="6h5-d4-pTV" firstAttribute="bottom" secondItem="bhk-bJ-Vsg" secondAttribute="bottom" constant="20" id="mso-Q4-fbj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6h5-d4-pTV"/>
                     </view>
-                    <connections>
-                        <outlet property="goBack" destination="bhk-bJ-Vsg" id="N8v-oF-baF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5b-lf-NcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1416,6 +1399,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="AmD-zT-rP8"/>
-        <segue reference="lQC-HG-bK2"/>
     </inferredMetricsTieBreakers>
 </document>
