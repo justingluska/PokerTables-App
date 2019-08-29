@@ -12,7 +12,6 @@ class TwoTable: UIViewController, UITextFieldDelegate {
     var interstitial: GADInterstitial!
     
     override func viewDidLoad() {
-        backB.layer.cornerRadius = 10
         clearB.layer.cornerRadius = 10
         generateB.layer.cornerRadius = 15
         thirdStack.isHidden = true
@@ -355,6 +354,41 @@ class TwoTable: UIViewController, UITextFieldDelegate {
         cupidShuffle()
         
     }
+    
+    @IBAction func clearButton(_ sender: Any) {
+        clearConfirm()
+    }
+    
+    func clearConfirm(){
+        let alertController = UIAlertController(title: "CLEAR NAMES", message: "Are you sure you want to clear the current player names?", preferredStyle: UIAlertController.Style.alert)
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Confirm", style: UIAlertAction.Style.default, handler: { action in
+            self.clearNames()
+        }))
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func clearNames(){
+        p1Name.text = ""
+        p2Name.text = ""
+        p3Name.text = ""
+        p4Name.text = ""
+        p5Name.text = ""
+        p6Name.text = ""
+        p7Name.text = ""
+        p8Name.text = ""
+        p9Name.text = ""
+        p10Name.text = ""
+        p11Name.text = ""
+        p12Name.text = ""
+        p13Name.text = ""
+        p14Name.text = ""
+        p15Name.text = ""
+        p16Name.text = ""
+    }
+    
     
     func cupidShuffle(){
         if(twoPlayerAmount == 4){

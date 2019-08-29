@@ -16,7 +16,6 @@ class FourTable: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         fourPlayerAmount = 8
         genB.layer.cornerRadius = 15
-        backB.layer.cornerRadius = 10
         clearB.layer.cornerRadius = 10
         thirdStack.isHidden = true
         fourthStack.isHidden = true
